@@ -39,7 +39,7 @@
       "categoryId": "sandwiches",
       "order": 1,
       "name": {
-        "en": "FAHITA-SMALL",
+        "en": "FAHITA SMALL",
         "ar": "فاهيتا سمول"
       },
       "price": "350,000 L.L.",
@@ -55,7 +55,7 @@
       "categoryId": "sandwiches",
       "order": 2,
       "name": {
-        "en": "FAHITA-LARGE",
+        "en": "FAHITA LARGE",
         "ar": "فاهيتا لارج"
       },
       "price": "450,000 L.L.",
