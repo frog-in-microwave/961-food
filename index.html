@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <!-- Basic page setup -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>CrepUra | Shakes & Sweets</title>
+  <title>961 Food | Snacks & More</title>
 
-  <!-- Main CSS file -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- 
-    Outfit: English font
-    Cairo: Arabic font
-  -->
   <link
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;700;800;900&family=Cairo:wght@400;600;700;800;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Outfit:wght@300;600;700;800;900&family=Cairo:wght@400;600;700;800;900&display=swap"
     rel="stylesheet"
   />
 
-  <!-- Font Awesome icons for Instagram, TikTok, WhatsApp -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -27,41 +20,33 @@
 </head>
 
 <body>
-  <!-- ================= HEADER ================= -->
-  <header>
-    <div class="logo">CrepUra</div>
-
-    <!-- This text changes when switching language -->
-    <div class="tagline" id="tagline">Shakes & Sweets</div>
-
-    <!-- Language buttons -->
+  <header class="brand-hero">
     <div class="language-toggle" aria-label="Language selector">
-      <button id="lang-en" class="lang-btn active" type="button">
-        EN
-      </button>
+      <button id="lang-en" class="lang-btn active" type="button">English</button>
+      <button id="lang-ar" class="lang-btn" type="button">عربي</button>
+    </div>
 
-      <button id="lang-ar" class="lang-btn" type="button">
-        AR
-      </button>
+    <div class="brand-content">
+      <div class="logo">
+        <span class="logo-number">961</span>
+        <span class="logo-food">Food</span>
+      </div>
+
+      <div class="tagline" id="tagline">Snacks & More</div>
     </div>
   </header>
 
-  <!-- ================= CATEGORY NAVIGATION ================= -->
-  <!-- JS will create category buttons inside #nav-links -->
   <nav id="category-nav" aria-label="Menu categories">
     <div class="nav-scroll-wrapper" id="nav-links"></div>
   </nav>
 
-  <!-- ================= MENU CONTENT ================= -->
-  <!-- JS will create all category sections and product cards here -->
   <main id="menu-container"></main>
 
-  <!-- ================= FOOTER ================= -->
   <footer>
     <div class="footer-container">
       <div class="footer-map">
         <iframe
-          title="CrepUra location"
+          title="961 Food location"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.4485!2d35.5131!3d33.8938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDUzJzM3LjciTiAzNcKwMzAnNDcuMiJF!5e0!3m2!1sen!2slb!4v1620000000000!5m2!1sen!2slb"
           width="100%"
           height="200"
@@ -73,7 +58,7 @@
 
       <div class="footer-info">
         <h3 id="footer-title">Visit Us</h3>
-        <p id="footer-location">Ghazieh, Lebanon</p>
+        <p id="footer-location">Lebanon</p>
 
         <div class="social-icons">
           <a
@@ -104,16 +89,13 @@
     </div>
 
     <div class="footer-bottom" id="footer-bottom">
-      © 2026 CrepUra. Built for speed.
+      © 2026 961 Food. Built for speed.
     </div>
   </footer>
 
-  <!-- ================= PRODUCT MODAL ================= -->
   <div id="item-modal" class="modal" aria-hidden="true">
     <div class="modal-content" role="dialog" aria-modal="true">
-      <button class="close-btn" type="button" aria-label="Close modal">
-        ×
-      </button>
+      <button class="close-btn" type="button" aria-label="Close modal">×</button>
 
       <div class="modal-img-container">
         <img src="" id="modal-img" alt="" />
@@ -127,7 +109,6 @@
     </div>
   </div>
 
-  <!-- Main JS file -->
   <script src="js/script.js"></script>
 </body>
 </html>

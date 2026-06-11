@@ -1,74 +1,41 @@
-/* 
-  ===============================
-  CrepUra Menu Website Script
-  ===============================
-
-  This file does 5 main things:
-
-  1. Loads products from data/products.json
-  2. Renders categories and products
-  3. Supports English and Arabic
-  4. Sorts categories and products by order
-  5. Opens and closes the product modal
-*/
-
-/* ================= GLOBAL STATE ================= */
-
 /*
-  The selected language is stored in localStorage.
-  This means if the user chooses Arabic, the site remembers it next time.
+  ===============================
+  961 Food Digital Menu Script
+  Mobile-first version
+  ===============================
 */
-let currentLanguage = localStorage.getItem("crepura-language") || "en";
 
-/*
-  menuData will contain the full JSON data after loading:
-  {
-    categories: [],
-    products: []
-  }
-*/
+let currentLanguage = localStorage.getItem("restaurant-language") || "en";
+
 let menuData = null;
 
-/*
-  activeProduct stores the product currently shown in the modal.
-  This helps us update modal text when language changes.
-*/
 let activeProduct = null;
 
-/*
-  Fallback image used if a product image fails to load.
-*/
 const FALLBACK_IMAGE = "https://placehold.co/400x400?text=Food";
 
-/* ================= STATIC WEBSITE TEXT ================= */
-
-/*
-  Product text is stored in products.json.
-  General website text is stored here.
-*/
 const siteText = {
   en: {
-    tagline: "Shakes & Sweets",
+    tagline: "Snacks & More",
     visitUs: "Visit Us",
-    location: "Ghazieh, Lebanon",
-    footerBottom: "© 2026 CrepUra. Built for speed.",
+    location: "Lebanon",
+    footerBottom: "© 2026 961 Food. Built for speed.",
     loading: "Loading menu...",
     error: "Menu failed to load. Please try again later.",
-    defaultDescription: "Indulge in our premium CrepUra specialty.",
+    defaultDescription: "Fresh fast food favorite from 961 Food.",
+    offer: "Offer",
   },
 
   ar: {
-    tagline: "مشروبات وحلويات",
+    tagline: "سناكس وأكثر",
     visitUs: "زورونا",
-    location: "الغازية، لبنان",
-    footerBottom: "© 2026 CrepUra. صُمم للسرعة.",
+    location: "لبنان",
+    footerBottom: "© 2026 961 Food. صُمم للسرعة.",
     loading: "جارٍ تحميل القائمة...",
     error: "تعذر تحميل القائمة. يرجى المحاولة لاحقًا.",
-    defaultDescription: "استمتعوا بأشهى أصناف CrepUra المميزة.",
+    defaultDescription: "طبق فاست فود مميز من 961 Food.",
+    offer: "عرض",
   },
 };
-
-/* ================= DOM ELEMENTS ================= */
 
 const menuContainer = document.getElementById("menu-container");
 const navLinks = document.getElementById("nav-links");
@@ -88,55 +55,24 @@ const modalPrice = document.getElementById("modal-price");
 const modalDesc = document.getElementById("modal-desc");
 const closeButton = document.querySelector(".close-btn");
 
-/* ================= LANGUAGE HELPERS ================= */
+/* ===============================
+   LANGUAGE
+================================ */
 
-/*
-  Gets translated text from an object.
-
-  Example:
-  getText({
-    en: "Nutella crepe",
-    ar: "كريب نوتيلا"
-  })
-
-  If currentLanguage is "en", it returns "Nutella crepe".
-  If currentLanguage is "ar", it returns "كريب نوتيلا".
-*/
 function getText(value) {
   if (!value) return "";
 
-  /*
-    This allows the website to still work if a value is just a normal string.
-  */
   if (typeof value === "string") {
     return value;
   }
 
-  /*
-    Fallback order:
-    1. Current language
-    2. English
-    3. Empty text
-  */
   return value[currentLanguage] || value.en || "";
 }
 
-/*
-  Gets general website text from siteText.
-*/
 function getSiteText(key) {
   return siteText[currentLanguage][key] || siteText.en[key] || "";
 }
 
-/*
-  Applies the selected language to the whole page.
-
-  English:
-  <html lang="en" dir="ltr">
-
-  Arabic:
-  <html lang="ar" dir="rtl">
-*/
 function applyLanguageSettings() {
   const isArabic = currentLanguage === "ar";
 
@@ -155,31 +91,24 @@ function applyLanguageSettings() {
   langArButton.setAttribute("aria-pressed", currentLanguage === "ar");
 }
 
-/*
-  Changes language and re-renders the menu.
-*/
 function changeLanguage(language) {
   currentLanguage = language;
-  localStorage.setItem("crepura-language", language);
+
+  localStorage.setItem("restaurant-language", language);
 
   applyLanguageSettings();
+
   renderMenu();
 
-  /*
-    If the modal is open, update its text too.
-  */
   if (activeProduct) {
     fillModal(activeProduct);
   }
 }
 
-/* ================= SORTING HELPERS ================= */
+/* ===============================
+   SORTING
+================================ */
 
-/*
-  Sorts categories/products by their order field.
-
-  Missing order values go to the end.
-*/
 function sortByOrder(a, b) {
   const orderA = typeof a.order === "number" ? a.order : 9999;
   const orderB = typeof b.order === "number" ? b.order : 9999;
@@ -187,9 +116,6 @@ function sortByOrder(a, b) {
   return orderA - orderB;
 }
 
-/*
-  Gets categories sorted by category.order.
-*/
 function getSortedCategories() {
   if (!menuData || !Array.isArray(menuData.categories)) {
     return [];
@@ -198,20 +124,6 @@ function getSortedCategories() {
   return menuData.categories.slice().sort(sortByOrder);
 }
 
-/*
-  Gets products for one category, sorted by product.order.
-
-  The order is per category.
-  So this is valid:
-
-  Crepes:
-  - order 1
-  - order 2
-
-  Shakes:
-  - order 1
-  - order 2
-*/
 function getProductsForCategory(categoryId) {
   if (!menuData || !Array.isArray(menuData.products)) {
     return [];
@@ -229,19 +141,14 @@ function getProductsForCategory(categoryId) {
         return orderDifference;
       }
 
-      /*
-        If two products accidentally have the same order inside the same category,
-        sort them alphabetically by the current language.
-      */
       return getText(a.name).localeCompare(getText(b.name), currentLanguage);
     });
 }
 
-/* ================= LOADING MENU DATA ================= */
+/* ===============================
+   LOAD MENU
+================================ */
 
-/*
-  Loads menu data from data/products.json.
-*/
 async function loadMenu() {
   try {
     showStatusMessage(getSiteText("loading"));
@@ -249,7 +156,7 @@ async function loadMenu() {
     const response = await fetch("data/products.json");
 
     if (!response.ok) {
-      throw new Error("Could not load products.json");
+      throw new Error("Could not load data/products.json");
     }
 
     menuData = await response.json();
@@ -261,13 +168,11 @@ async function loadMenu() {
   }
 }
 
-/*
-  Shows loading or error message in the menu area.
-*/
-function showStatusMessage(message, isError) {
+function showStatusMessage(message, isError = false) {
   menuContainer.innerHTML = "";
 
   const paragraph = document.createElement("p");
+
   paragraph.className = isError ? "status-message error" : "status-message";
 
   paragraph.textContent = message;
@@ -275,14 +180,10 @@ function showStatusMessage(message, isError) {
   menuContainer.appendChild(paragraph);
 }
 
-/* ================= MENU RENDERING ================= */
+/* ===============================
+   RENDER MENU
+================================ */
 
-/*
-  Renders the full menu:
-  - category navigation buttons
-  - category sections
-  - product cards
-*/
 function renderMenu() {
   if (!menuData) return;
 
@@ -295,37 +196,32 @@ function renderMenu() {
     createCategoryNavLink(category, index);
     createCategorySection(category, index);
   });
+
+  setFirstNavLinkActive();
+  setupScrollSpy();
 }
 
-/*
-  Creates one button/link in the sticky category navigation.
-*/
 function createCategoryNavLink(category, index) {
   const link = document.createElement("a");
 
   link.className = index === 0 ? "nav-link active" : "nav-link";
   link.href = "#" + category.id;
+  link.dataset.categoryId = category.id;
   link.textContent = getText(category.name);
 
   link.addEventListener("click", function () {
-    document.querySelectorAll(".nav-link").forEach(function (item) {
-      item.classList.remove("active");
-    });
-
-    link.classList.add("active");
+    setActiveNavLink(category.id);
   });
 
   navLinks.appendChild(link);
 }
 
-/*
-  Creates one category section with its products.
-*/
 function createCategorySection(category, index) {
   const section = document.createElement("section");
 
   section.id = category.id;
   section.className = "category-section";
+  section.dataset.categoryId = category.id;
 
   if (index !== 0) {
     const divider = document.createElement("hr");
@@ -352,20 +248,25 @@ function createCategorySection(category, index) {
   menuContainer.appendChild(section);
 }
 
-/*
-  Creates one product card.
-*/
 function createProductCard(product) {
   const card = document.createElement("article");
+
   card.className = "card";
+  card.tabIndex = 0;
+  card.setAttribute("role", "button");
+  card.setAttribute("aria-label", getText(product.name));
 
   card.addEventListener("click", function () {
     showModal(product);
   });
 
-  /*
-    Image container with skeleton loading.
-  */
+  card.addEventListener("keydown", function (event) {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      showModal(product);
+    }
+  });
+
   const imgContainer = document.createElement("div");
   imgContainer.className = "card-img-container";
 
@@ -381,16 +282,13 @@ function createProductCard(product) {
   img.addEventListener("error", function () {
     imgContainer.classList.add("loaded");
 
-    if (img.src !== FALLBACK_IMAGE) {
+    if (!img.src.includes("placehold.co")) {
       img.src = FALLBACK_IMAGE;
     }
   });
 
   imgContainer.appendChild(img);
 
-  /*
-    Product information.
-  */
   const info = document.createElement("div");
   info.className = "card-info";
 
@@ -400,7 +298,11 @@ function createProductCard(product) {
 
   const price = document.createElement("p");
   price.className = "card-price";
-  price.textContent = product.price;
+
+  price.textContent =
+    product.price && product.price.trim()
+      ? product.price
+      : getSiteText("offer");
 
   info.appendChild(title);
   info.appendChild(price);
@@ -411,11 +313,119 @@ function createProductCard(product) {
   return card;
 }
 
-/* ================= MODAL ================= */
+/* ===============================
+   MOBILE-FIRST SCROLL HIGHLIGHT
+================================ */
 
-/*
-  Opens the modal.
-*/
+let currentActiveCategoryId = null;
+let scrollSpyFrame = null;
+
+function setFirstNavLinkActive() {
+  const firstLink = document.querySelector(".nav-link");
+
+  if (!firstLink) return;
+
+  currentActiveCategoryId = firstLink.dataset.categoryId;
+
+  document.querySelectorAll(".nav-link").forEach(function (link) {
+    link.classList.remove("active");
+  });
+
+  firstLink.classList.add("active");
+}
+
+function setActiveNavLink(categoryId) {
+  if (!categoryId) return;
+
+  if (categoryId === currentActiveCategoryId) {
+    return;
+  }
+
+  currentActiveCategoryId = categoryId;
+
+  document.querySelectorAll(".nav-link").forEach(function (link) {
+    const isActive = link.dataset.categoryId === categoryId;
+
+    link.classList.toggle("active", isActive);
+
+    if (isActive) {
+      link.scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+        block: "nearest",
+      });
+    }
+  });
+}
+
+function getStickyNavHeight() {
+  const nav = document.getElementById("category-nav");
+
+  if (!nav) {
+    return 0;
+  }
+
+  return nav.offsetHeight;
+}
+
+function getActiveCategoryFromScroll() {
+  const sections = Array.from(document.querySelectorAll(".category-section"));
+
+  if (sections.length === 0) {
+    return null;
+  }
+
+  const checkpoint = getStickyNavHeight() + 28;
+
+  let activeCategoryId = sections[0].dataset.categoryId;
+
+  sections.forEach(function (section) {
+    const rect = section.getBoundingClientRect();
+
+    if (rect.top <= checkpoint) {
+      activeCategoryId = section.dataset.categoryId;
+    }
+  });
+
+  const scrollBottom = window.scrollY + window.innerHeight;
+  const pageHeight = document.documentElement.scrollHeight;
+
+  if (pageHeight - scrollBottom <= 8) {
+    activeCategoryId = sections[sections.length - 1].dataset.categoryId;
+  }
+
+  return activeCategoryId;
+}
+
+function handleScrollSpy() {
+  if (scrollSpyFrame) return;
+
+  scrollSpyFrame = window.requestAnimationFrame(function () {
+    const activeCategoryId = getActiveCategoryFromScroll();
+
+    setActiveNavLink(activeCategoryId);
+
+    scrollSpyFrame = null;
+  });
+}
+
+function setupScrollSpy() {
+  window.removeEventListener("scroll", handleScrollSpy);
+  window.removeEventListener("resize", handleScrollSpy);
+
+  window.addEventListener("scroll", handleScrollSpy, {
+    passive: true,
+  });
+
+  window.addEventListener("resize", handleScrollSpy);
+
+  handleScrollSpy();
+}
+
+/* ===============================
+   MODAL
+================================ */
+
 function showModal(product) {
   activeProduct = product;
 
@@ -427,23 +437,21 @@ function showModal(product) {
   document.body.style.overflow = "hidden";
 }
 
-/*
-  Fills the modal with product data.
-*/
 function fillModal(product) {
   modalImg.src = product.image;
   modalImg.alt = getText(product.name);
 
   modalTitle.textContent = getText(product.name);
-  modalPrice.textContent = product.price;
+
+  modalPrice.textContent =
+    product.price && product.price.trim()
+      ? product.price
+      : getSiteText("offer");
 
   modalDesc.textContent =
     getText(product.description) || getSiteText("defaultDescription");
 }
 
-/*
-  Closes the modal.
-*/
 function closeModal() {
   activeProduct = null;
 
@@ -453,7 +461,9 @@ function closeModal() {
   document.body.style.overflow = "auto";
 }
 
-/* ================= EVENT LISTENERS ================= */
+/* ===============================
+   EVENTS
+================================ */
 
 langEnButton.addEventListener("click", function () {
   changeLanguage("en");
@@ -465,38 +475,27 @@ langArButton.addEventListener("click", function () {
 
 closeButton.addEventListener("click", closeModal);
 
-/*
-  Close modal when clicking the dark overlay outside the white modal box.
-*/
 modal.addEventListener("click", function (event) {
   if (event.target === modal) {
     closeModal();
   }
 });
 
-/*
-  Close modal with Escape key.
-*/
 window.addEventListener("keydown", function (event) {
   if (event.key === "Escape" && modal.classList.contains("active")) {
     closeModal();
   }
 });
 
-/*
-  Fallback image for modal image.
-*/
 modalImg.addEventListener("error", function () {
-  if (modalImg.src !== FALLBACK_IMAGE) {
+  if (!modalImg.src.includes("placehold.co")) {
     modalImg.src = FALLBACK_IMAGE;
   }
 });
 
-/* ================= START WEBSITE ================= */
+/* ===============================
+   START
+================================ */
 
-/*
-  1. Apply saved language.
-  2. Load products.
-*/
 applyLanguageSettings();
 loadMenu();
