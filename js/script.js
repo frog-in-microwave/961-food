@@ -199,6 +199,18 @@ function renderMenu() {
 
   setFirstNavLinkActive();
   setupScrollSpy();
+
+  /*
+    If the page opens with a hash like #extras,
+    scroll to it correctly after rendering.
+  */
+  if (window.location.hash) {
+    const categoryId = window.location.hash.replace("#", "");
+
+    window.setTimeout(function () {
+      scrollToCategory(categoryId);
+    }, 100);
+  }
 }
 
 function createCategoryNavLink(category, index) {
@@ -209,8 +221,9 @@ function createCategoryNavLink(category, index) {
   link.dataset.categoryId = category.id;
   link.textContent = getText(category.name);
 
-  link.addEventListener("click", function () {
-    setActiveNavLink(category.id);
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    scrollToCategory(category.id);
   });
 
   navLinks.appendChild(link);
@@ -320,6 +333,12 @@ function createProductCard(product) {
 let currentActiveCategoryId = null;
 let scrollSpyFrame = null;
 
+/*
+  This lock prevents the scroll spy from immediately re-highlighting
+  the previous category during smooth scrolling.
+*/
+let scrollSpyLockedUntil = 0;
+
 function setFirstNavLinkActive() {
   const firstLink = document.querySelector(".nav-link");
 
@@ -334,28 +353,37 @@ function setFirstNavLinkActive() {
   firstLink.classList.add("active");
 }
 
-function setActiveNavLink(categoryId) {
+function setActiveNavLink(categoryId, force = false) {
   if (!categoryId) return;
 
-  if (categoryId === currentActiveCategoryId) {
+  if (!force && categoryId === currentActiveCategoryId) {
     return;
   }
 
   currentActiveCategoryId = categoryId;
 
+  /*
+    Important:
+    remove active from every link first, then add it to only one.
+    This guarantees that two nav links cannot remain highlighted.
+  */
   document.querySelectorAll(".nav-link").forEach(function (link) {
-    const isActive = link.dataset.categoryId === categoryId;
-
-    link.classList.toggle("active", isActive);
-
-    if (isActive) {
-      link.scrollIntoView({
-        behavior: "smooth",
-        inline: "center",
-        block: "nearest",
-      });
-    }
+    link.classList.remove("active");
   });
+
+  const activeLink = document.querySelector(
+    `.nav-link[data-category-id="${categoryId}"]`,
+  );
+
+  if (activeLink) {
+    activeLink.classList.add("active");
+
+    activeLink.scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "nearest",
+    });
+  }
 }
 
 function getStickyNavHeight() {
@@ -368,6 +396,48 @@ function getStickyNavHeight() {
   return nav.offsetHeight;
 }
 
+function getScrollOffset() {
+  /*
+    Extra 16px gives the category title breathing room under the sticky nav.
+  */
+  return getStickyNavHeight() + 16;
+}
+
+function scrollToCategory(categoryId) {
+  const section = document.getElementById(categoryId);
+
+  if (!section) return;
+
+  /*
+    Lock the chosen category while smooth scroll is happening.
+    This fixes mobile where the previous section is still partly visible.
+  */
+  scrollSpyLockedUntil = Date.now() + 900;
+
+  setActiveNavLink(categoryId, true);
+
+  const targetY =
+    section.getBoundingClientRect().top + window.scrollY - getScrollOffset();
+
+  window.scrollTo({
+    top: targetY,
+    behavior: "smooth",
+  });
+
+  /*
+    Update the URL hash without causing the browser's default jump.
+  */
+  history.pushState(null, "", "#" + categoryId);
+
+  /*
+    After the smooth scroll finishes, force-check again.
+  */
+  window.setTimeout(function () {
+    scrollSpyLockedUntil = 0;
+    handleScrollSpy();
+  }, 950);
+}
+
 function getActiveCategoryFromScroll() {
   const sections = Array.from(document.querySelectorAll(".category-section"));
 
@@ -375,7 +445,11 @@ function getActiveCategoryFromScroll() {
     return null;
   }
 
-  const checkpoint = getStickyNavHeight() + 28;
+  /*
+    This checkpoint is just under the sticky nav.
+    The active category is the last category whose top passed this line.
+  */
+  const checkpoint = getScrollOffset() + 8;
 
   let activeCategoryId = sections[0].dataset.categoryId;
 
@@ -387,6 +461,10 @@ function getActiveCategoryFromScroll() {
     }
   });
 
+  /*
+    If user reaches page bottom, force the last category active.
+    This helps when the final category is short.
+  */
   const scrollBottom = window.scrollY + window.innerHeight;
   const pageHeight = document.documentElement.scrollHeight;
 
@@ -398,6 +476,10 @@ function getActiveCategoryFromScroll() {
 }
 
 function handleScrollSpy() {
+  if (Date.now() < scrollSpyLockedUntil) {
+    return;
+  }
+
   if (scrollSpyFrame) return;
 
   scrollSpyFrame = window.requestAnimationFrame(function () {
