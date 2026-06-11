@@ -1,0 +1,1462 @@
+{
+  "categories": [
+    {
+      "id": "crepes",
+      "order": 1,
+      "name": {
+        "en": "Crepes",
+        "ar": "hhhhhhhhh"
+      }
+    },
+    {
+      "id": "pancakes",
+      "order": 2,
+      "name": {
+        "en": "Pancakes",
+        "ar": ""
+      }
+    },
+    {
+      "id": "offers",
+      "order": 3,
+      "name": {
+        "en": "Offers",
+        "ar": ""
+      }
+    },
+    {
+      "id": "sweets",
+      "order": 4,
+      "name": {
+        "en": "Sweets",
+        "ar": ""
+      }
+    },
+    {
+      "id": "kaake",
+      "order": 5,
+      "name": {
+        "en": "Kaake",
+        "ar": ""
+      }
+    },
+    {
+      "id": "hot-drinks",
+      "order": 6,
+      "name": {
+        "en": "Hot Drinks",
+        "ar": ""
+      }
+    },
+    {
+      "id": "iced-drinks",
+      "order": 7,
+      "name": {
+        "en": "Iced Drinks",
+        "ar": ""
+      }
+    },
+    {
+      "id": "milkshakes",
+      "order": 8,
+      "name": {
+        "en": "Milkshakes",
+        "ar": ""
+      }
+    },
+    {
+      "id": "frappe",
+      "order": 9,
+      "name": {
+        "en": "Frappe",
+        "ar": ""
+      }
+    },
+    {
+      "id": "smoothies",
+      "order": 10,
+      "name": {
+        "en": "Smoothies",
+        "ar": ""
+      }
+    },
+    {
+      "id": "special-drinks",
+      "order": 11,
+      "name": {
+        "en": "Special Drinks",
+        "ar": ""
+      }
+    },
+    {
+      "id": "sugar-free",
+      "order": 12,
+      "name": {
+        "en": "Sugar Free",
+        "ar": ""
+      }
+    },
+    {
+      "id": "crepura-boxes",
+      "order": 13,
+      "name": {
+        "en": "Crepura Boxes",
+        "ar": ""
+      }
+    },
+    {
+      "id": "add-ons",
+      "order": 14,
+      "name": {
+        "en": "Add-ons",
+        "ar": ""
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": "crepes-nutella-crepe",
+      "categoryId": "crepes",
+      "order": 1,
+      "name": {
+        "en": "Nutella crepe",
+        "ar": ""
+      },
+      "price": "4.5$",
+      "description": {
+        "en": "Classic crepe with Nutella.",
+        "ar": ""
+      },
+      "image": "images/nutella_crepe.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "crepes-kinder-crepe",
+      "categoryId": "crepes",
+      "order": 2,
+      "name": {
+        "en": "Kinder crepe",
+        "ar": ""
+      },
+      "price": "5.5$",
+      "description": {
+        "en": "Crepe with Kinder chocolate.",
+        "ar": ""
+      },
+      "image": "images/kinder_crepe.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "crepes-kinder-bueno-crepe",
+      "categoryId": "crepes",
+      "order": 3,
+      "name": {
+        "en": "Kinder Bueno crepe",
+        "ar": ""
+      },
+      "price": "8$",
+      "description": {
+        "en": "Crepe with Kinder chocolate.",
+        "ar": ""
+      },
+      "image": "images/kinder_bueno_crepe.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "crepes-crepura-specialty-crepe",
+      "categoryId": "crepes",
+      "order": 4,
+      "name": {
+        "en": "Crepura specialty crepe",
+        "ar": ""
+      },
+      "price": "8$",
+      "description": {
+        "en": "Crepe with nutella, pistachio and white chocolate.",
+        "ar": ""
+      },
+      "image": "images/crepura_specialty_crepe.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "crepes-oreo-crepe",
+      "categoryId": "crepes",
+      "order": 5,
+      "name": {
+        "en": "Oreo crepe",
+        "ar": ""
+      },
+      "price": "5.5$",
+      "description": {
+        "en": "Crepe with crushed Oreo.",
+        "ar": ""
+      },
+      "image": "images/oreo_crepe.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "crepes-lotus-crepe",
+      "categoryId": "crepes",
+      "order": 6,
+      "name": {
+        "en": "Lotus crepe",
+        "ar": ""
+      },
+      "price": "5.5$",
+      "description": {
+        "en": "Crepe with Lotus spread.",
+        "ar": ""
+      },
+      "image": "images/lotus_crepe.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "crepes-pistachio-crepe",
+      "categoryId": "crepes",
+      "order": 7,
+      "name": {
+        "en": "Pistachio crepe",
+        "ar": ""
+      },
+      "price": "5.5$",
+      "description": {
+        "en": "Crepe with pistachio cream.",
+        "ar": ""
+      },
+      "image": "images/pistachio_crepe.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "pancakes-nutella-pancake",
+      "categoryId": "pancakes",
+      "order": 1,
+      "name": {
+        "en": "Nutella pancake",
+        "ar": ""
+      },
+      "price": "4.5$",
+      "description": {
+        "en": "Fluffy Nutella pancakes.",
+        "ar": ""
+      },
+      "image": "images/nutella_pancake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "pancakes-kinder-pancake",
+      "categoryId": "pancakes",
+      "order": 2,
+      "name": {
+        "en": "Kinder pancake",
+        "ar": ""
+      },
+      "price": "5.5$",
+      "description": {
+        "en": "Pancakes with Kinder cream.",
+        "ar": ""
+      },
+      "image": "images/kinder_pancake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "pancakes-oreo-pancake",
+      "categoryId": "pancakes",
+      "order": 3,
+      "name": {
+        "en": "Oreo pancake",
+        "ar": ""
+      },
+      "price": "5.5$",
+      "description": {
+        "en": "Pancakes with Oreo crumbles.",
+        "ar": ""
+      },
+      "image": "images/oreo_pancake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "pancakes-lotus-pancake",
+      "categoryId": "pancakes",
+      "order": 4,
+      "name": {
+        "en": "Lotus pancake",
+        "ar": ""
+      },
+      "price": "5.5$",
+      "description": {
+        "en": "Pancakes with Lotus sauce.",
+        "ar": ""
+      },
+      "image": "images/lotus_pancake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "pancakes-pistachio-pancake",
+      "categoryId": "pancakes",
+      "order": 5,
+      "name": {
+        "en": "Pistachio pancake",
+        "ar": ""
+      },
+      "price": "5.5$",
+      "description": {
+        "en": "Pancakes with pistachio cream.",
+        "ar": ""
+      },
+      "image": "images/pistachio_pancake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "pancakes-pancake-bulls",
+      "categoryId": "pancakes",
+      "order": 6,
+      "name": {
+        "en": "Pancake bulls",
+        "ar": ""
+      },
+      "price": "5.5$",
+      "description": {
+        "en": "Mini pancakes with multiple flavors.",
+        "ar": ""
+      },
+      "image": "images/pancake_bulls.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "pancakes-mini-pancakes-with-strawberry",
+      "categoryId": "pancakes",
+      "order": 7,
+      "name": {
+        "en": "Mini pancakes with strawberry",
+        "ar": ""
+      },
+      "price": "5.5$",
+      "description": {
+        "en": "Mini pancakes with multiple flavors.",
+        "ar": ""
+      },
+      "image": "images/mini_pancakes.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "offers-30-pancake-bulls",
+      "categoryId": "offers",
+      "order": 1,
+      "name": {
+        "en": "30 Pancake bulls",
+        "ar": ""
+      },
+      "price": "1000 L.L",
+      "description": {
+        "en": "30 Mini pancakes with multiple flavors.",
+        "ar": ""
+      },
+      "image": "images/pancake_bulls_offer.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "offers-any-2-crepes-1-drink-free",
+      "categoryId": "offers",
+      "order": 2,
+      "name": {
+        "en": "Any 2 crepes + 1 drink free",
+        "ar": ""
+      },
+      "price": " ",
+      "description": {
+        "en": "Free drink with any 2 crepes",
+        "ar": ""
+      },
+      "image": "images/2_creps_1_drink_offer.png",
+      "isAvailable": true
+    },
+    {
+      "id": "sweets-chocolate-cake-piece",
+      "categoryId": "sweets",
+      "order": 1,
+      "name": {
+        "en": "Chocolate cake piece",
+        "ar": ""
+      },
+      "price": "4.5$",
+      "description": {
+        "en": "Rich chocolate cake slice.",
+        "ar": ""
+      },
+      "image": "images/chocolate_cake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "sweets-cupcakes",
+      "categoryId": "sweets",
+      "order": 2,
+      "name": {
+        "en": "Cupcakes",
+        "ar": ""
+      },
+      "price": "1$",
+      "description": {
+        "en": "Daily fresh cupcakes.",
+        "ar": ""
+      },
+      "image": "images/cupcake.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "sweets-cheesecake",
+      "categoryId": "sweets",
+      "order": 3,
+      "name": {
+        "en": "Cheesecake",
+        "ar": ""
+      },
+      "price": "4.5$",
+      "description": {
+        "en": "Classic creamy cheesecake.",
+        "ar": ""
+      },
+      "image": "images/cheesecake.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "sweets-berries-cheesecake",
+      "categoryId": "sweets",
+      "order": 4,
+      "name": {
+        "en": "Berries cheesecake",
+        "ar": ""
+      },
+      "price": "4.5$",
+      "description": {
+        "en": "Creamy berry cheesecake.",
+        "ar": ""
+      },
+      "image": "images/berries_cheesecake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "sweets-lotus-cheesecake",
+      "categoryId": "sweets",
+      "order": 5,
+      "name": {
+        "en": "Lotus cheesecake",
+        "ar": ""
+      },
+      "price": "4.5$",
+      "description": {
+        "en": "Lotus flavored cheesecake.",
+        "ar": ""
+      },
+      "image": "images/lotus_cheesecake.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "sweets-oreo-cheesecake",
+      "categoryId": "sweets",
+      "order": 6,
+      "name": {
+        "en": "Oreo cheesecake",
+        "ar": ""
+      },
+      "price": "4.5$",
+      "description": {
+        "en": "Oreo flavored cheesecake.",
+        "ar": ""
+      },
+      "image": "images/oreo_cheesecake.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "sweets-cookie",
+      "categoryId": "sweets",
+      "order": 7,
+      "name": {
+        "en": "Cookie",
+        "ar": ""
+      },
+      "price": "100 L.L",
+      "description": {
+        "en": "Choclate chip cookie",
+        "ar": ""
+      },
+      "image": "images/cookies.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "sweets-tiramisu",
+      "categoryId": "sweets",
+      "order": 8,
+      "name": {
+        "en": "Tiramisu",
+        "ar": ""
+      },
+      "price": "4.5$",
+      "description": {
+        "en": "Classic Italian tiramisu.",
+        "ar": ""
+      },
+      "image": "images/tiramisu.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "sweets-lazy-cake",
+      "categoryId": "sweets",
+      "order": 9,
+      "name": {
+        "en": "Lazy cake",
+        "ar": ""
+      },
+      "price": "4.5$",
+      "description": {
+        "en": "Traditional chocolate biscuit cake.",
+        "ar": ""
+      },
+      "image": "images/lazy_cake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "kaake-thyme",
+      "categoryId": "kaake",
+      "order": 1,
+      "name": {
+        "en": "Thyme",
+        "ar": ""
+      },
+      "price": "150 L.L",
+      "description": {
+        "en": "Zaatar Kaake.",
+        "ar": ""
+      },
+      "image": "images/kaake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "kaake-picon",
+      "categoryId": "kaake",
+      "order": 2,
+      "name": {
+        "en": "Picon",
+        "ar": ""
+      },
+      "price": "200 L.L",
+      "description": {
+        "en": "Cheese Picon Kaake.",
+        "ar": ""
+      },
+      "image": "images/kaake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "kaake-halloum",
+      "categoryId": "kaake",
+      "order": 3,
+      "name": {
+        "en": "Halloum",
+        "ar": ""
+      },
+      "price": "220 L.L",
+      "description": {
+        "en": "Halloumi cheese Kaake.",
+        "ar": ""
+      },
+      "image": "images/cheese_kaake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "kaake-akawi",
+      "categoryId": "kaake",
+      "order": 4,
+      "name": {
+        "en": "Akawi",
+        "ar": ""
+      },
+      "price": "250 L.L",
+      "description": {
+        "en": "Akawi cheese Kaake.",
+        "ar": ""
+      },
+      "image": "images/cheese_kaake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "kaake-3-cheese",
+      "categoryId": "kaake",
+      "order": 5,
+      "name": {
+        "en": "3 cheese",
+        "ar": ""
+      },
+      "price": "300 L.L",
+      "description": {
+        "en": "Triple cheese blend Kaake.",
+        "ar": ""
+      },
+      "image": "images/cheese_kaake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "kaake-4-cheese",
+      "categoryId": "kaake",
+      "order": 6,
+      "name": {
+        "en": "4 cheese",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Four cheese blend Kaake.",
+        "ar": ""
+      },
+      "image": "images/cheese_kaake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "kaake-turkey-and-cheese",
+      "categoryId": "kaake",
+      "order": 7,
+      "name": {
+        "en": "Turkey & cheese",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Turkey slices and cheese Kaake.",
+        "ar": ""
+      },
+      "image": "images/kaake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "kaake-nutella-kaake",
+      "categoryId": "kaake",
+      "order": 8,
+      "name": {
+        "en": "Nutella Kaake",
+        "ar": ""
+      },
+      "price": "200 L.L",
+      "description": {
+        "en": "Sweet Nutella Kaake.",
+        "ar": ""
+      },
+      "image": "images/nutella_kaake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "kaake-pizza-kaake",
+      "categoryId": "kaake",
+      "order": 9,
+      "name": {
+        "en": "Pizza Kaake",
+        "ar": ""
+      },
+      "price": "400 L.L",
+      "description": {
+        "en": "Pizza toppings Kaake.",
+        "ar": ""
+      },
+      "image": "images/kaake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "hot-drinks-cappuccino",
+      "categoryId": "hot-drinks",
+      "order": 1,
+      "name": {
+        "en": "Cappuccino",
+        "ar": ""
+      },
+      "price": "250 L.L",
+      "description": {
+        "en": "Frothy espresso and milk.",
+        "ar": ""
+      },
+      "image": "images/cappuccino.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "hot-drinks-hot-chocolate",
+      "categoryId": "hot-drinks",
+      "order": 2,
+      "name": {
+        "en": "Hot chocolate",
+        "ar": ""
+      },
+      "price": "300 L.L",
+      "description": {
+        "en": "Creamy hot cocoa.",
+        "ar": ""
+      },
+      "image": "images/hot_chocolate.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "hot-drinks-americano",
+      "categoryId": "hot-drinks",
+      "order": 3,
+      "name": {
+        "en": "Americano",
+        "ar": ""
+      },
+      "price": "250 L.L",
+      "description": {
+        "en": "Diluted espresso shot.",
+        "ar": ""
+      },
+      "image": "images/americano.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "hot-drinks-flat-white",
+      "categoryId": "hot-drinks",
+      "order": 4,
+      "name": {
+        "en": "Flat white",
+        "ar": ""
+      },
+      "price": "250 L.L",
+      "description": {
+        "en": "Velvety espresso drink.",
+        "ar": ""
+      },
+      "image": "images/flat_white.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "hot-drinks-caramel-macchiato",
+      "categoryId": "hot-drinks",
+      "order": 5,
+      "name": {
+        "en": "Caramel macchiato",
+        "ar": ""
+      },
+      "price": "300 L.L",
+      "description": {
+        "en": "Sweet caramel coffee.",
+        "ar": ""
+      },
+      "image": "images/caramel_macchiato.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "hot-drinks-caffe-latte",
+      "categoryId": "hot-drinks",
+      "order": 6,
+      "name": {
+        "en": "Caffe latte",
+        "ar": ""
+      },
+      "price": "250 L.L",
+      "description": {
+        "en": "Smooth milk and espresso.",
+        "ar": ""
+      },
+      "image": "images/caffe_latte.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "hot-drinks-white-mocca-latte",
+      "categoryId": "hot-drinks",
+      "order": 7,
+      "name": {
+        "en": "White mocca latte",
+        "ar": ""
+      },
+      "price": "300 L.L",
+      "description": {
+        "en": "White chocolate latte.",
+        "ar": ""
+      },
+      "image": "images/white_mocca_latte.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "hot-drinks-dark-mocca-latte",
+      "categoryId": "hot-drinks",
+      "order": 8,
+      "name": {
+        "en": "Dark mocca latte",
+        "ar": ""
+      },
+      "price": "300 L.L",
+      "description": {
+        "en": "Dark chocolate latte.",
+        "ar": ""
+      },
+      "image": "images/dark_mocca_latte.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "hot-drinks-spanish-latte",
+      "categoryId": "hot-drinks",
+      "order": 9,
+      "name": {
+        "en": "Spanish latte",
+        "ar": ""
+      },
+      "price": "300 L.L",
+      "description": {
+        "en": "Sweet condensed milk latte.",
+        "ar": ""
+      },
+      "image": "images/spanish_latte.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "iced-drinks-iced-caramel-macchiato",
+      "categoryId": "iced-drinks",
+      "order": 1,
+      "name": {
+        "en": "Iced caramel macchiato",
+        "ar": ""
+      },
+      "price": "300 L.L",
+      "description": {
+        "en": "Iced sweet caramel coffee.",
+        "ar": ""
+      },
+      "image": "images/iced_caramel_maciato.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "iced-drinks-iced-white-mocca",
+      "categoryId": "iced-drinks",
+      "order": 2,
+      "name": {
+        "en": "Iced white mocca",
+        "ar": ""
+      },
+      "price": "300 L.L",
+      "description": {
+        "en": "Iced white chocolate coffee.",
+        "ar": ""
+      },
+      "image": "images/iced_white_mocca.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "iced-drinks-iced-dark-mocca",
+      "categoryId": "iced-drinks",
+      "order": 3,
+      "name": {
+        "en": "Iced dark mocca",
+        "ar": ""
+      },
+      "price": "300 L.L",
+      "description": {
+        "en": "Iced dark chocolate coffee.",
+        "ar": ""
+      },
+      "image": "images/iced_dark_mocca.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "iced-drinks-iced-latte",
+      "categoryId": "iced-drinks",
+      "order": 4,
+      "name": {
+        "en": "Iced latte",
+        "ar": ""
+      },
+      "price": "250 L.L",
+      "description": {
+        "en": "Chilled espresso and milk.",
+        "ar": ""
+      },
+      "image": "images/iced_latte.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "iced-drinks-iced-spanish-latte",
+      "categoryId": "iced-drinks",
+      "order": 5,
+      "name": {
+        "en": "Iced Spanish latte",
+        "ar": ""
+      },
+      "price": "300 L.L",
+      "description": {
+        "en": "Chilled sweet condensed milk latte.",
+        "ar": ""
+      },
+      "image": "images/iced_spanish_latte.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "iced-drinks-crepura-iced",
+      "categoryId": "iced-drinks",
+      "order": 6,
+      "name": {
+        "en": "Crepura iced",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Signature iced house blend.",
+        "ar": ""
+      },
+      "image": "images/crepura_iced.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "milkshakes-chocolate-milkshake",
+      "categoryId": "milkshakes",
+      "order": 1,
+      "name": {
+        "en": "chocolate milkshake",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Classic chocolate shake.",
+        "ar": ""
+      },
+      "image": "images/chocolate_milkshake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "milkshakes-oreo-milkshake",
+      "categoryId": "milkshakes",
+      "order": 2,
+      "name": {
+        "en": "Oreo milkshake",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Classic chocolate shake.",
+        "ar": ""
+      },
+      "image": "images/oreo_milkshake.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "milkshakes-vanilla-milkshake",
+      "categoryId": "milkshakes",
+      "order": 3,
+      "name": {
+        "en": "vanilla milkshake",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Classic vanilla shake.",
+        "ar": ""
+      },
+      "image": "images/vanilla_milkshake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "milkshakes-lotus-milkshake",
+      "categoryId": "milkshakes",
+      "order": 4,
+      "name": {
+        "en": "Lotus milkshake",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Lotus biscuit shake.",
+        "ar": ""
+      },
+      "image": "images/lotus_milkshake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "milkshakes-hazelnut-milkshake",
+      "categoryId": "milkshakes",
+      "order": 5,
+      "name": {
+        "en": "Hazelnut milkshake",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Hazelnut milkshake.",
+        "ar": ""
+      },
+      "image": "images/hazelnut_milkshake.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "milkshakes-caramel-milkshake",
+      "categoryId": "milkshakes",
+      "order": 6,
+      "name": {
+        "en": "Caramel milkshake",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Blended caramel milkshake.",
+        "ar": ""
+      },
+      "image": "images/caramel_milkshake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "milkshakes-strawberry-milkshake",
+      "categoryId": "milkshakes",
+      "order": 7,
+      "name": {
+        "en": "Strawberry Milkshake",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Blended strawberry milkshake.",
+        "ar": ""
+      },
+      "image": "images/strawberry_milkshake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "frappe-vanilla-frappe",
+      "categoryId": "frappe",
+      "order": 1,
+      "name": {
+        "en": "Vanilla frappe",
+        "ar": ""
+      },
+      "price": "400 L.L",
+      "description": {
+        "en": "Blended vanilla coffee.",
+        "ar": ""
+      },
+      "image": "images/vanilla_frappe.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "frappe-caramel-frappe",
+      "categoryId": "frappe",
+      "order": 2,
+      "name": {
+        "en": "Caramel frappe",
+        "ar": ""
+      },
+      "price": "400 L.L",
+      "description": {
+        "en": "Blended caramel coffee.",
+        "ar": ""
+      },
+      "image": "images/caramel_frappe.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "frappe-mocha-frappe",
+      "categoryId": "frappe",
+      "order": 3,
+      "name": {
+        "en": "Mocha frappe",
+        "ar": ""
+      },
+      "price": "400 L.L",
+      "description": {
+        "en": "Blended chocolate coffee.",
+        "ar": ""
+      },
+      "image": "images/mocca_frappe.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "frappe-white-mocha-frappe",
+      "categoryId": "frappe",
+      "order": 4,
+      "name": {
+        "en": "White Mocha frappe",
+        "ar": ""
+      },
+      "price": "400 L.L",
+      "description": {
+        "en": "Blended white mocha coffee.",
+        "ar": ""
+      },
+      "image": "images/white_mocha_frappe.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "frappe-hazelnut-frappe",
+      "categoryId": "frappe",
+      "order": 5,
+      "name": {
+        "en": "Hazelnut frappe",
+        "ar": ""
+      },
+      "price": "400 L.L",
+      "description": {
+        "en": "Blended hazelnut coffee.",
+        "ar": ""
+      },
+      "image": "images/hazelnut_frappe.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "smoothies-mango-smoothie",
+      "categoryId": "smoothies",
+      "order": 1,
+      "name": {
+        "en": "Mango smoothie",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Refreshing mango blend.",
+        "ar": ""
+      },
+      "image": "images/mango_smoothie.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "smoothies-strawberry-smoothie",
+      "categoryId": "smoothies",
+      "order": 2,
+      "name": {
+        "en": "Strawberry smoothie",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Refreshing strawberry blend.",
+        "ar": ""
+      },
+      "image": "images/strawberry_smoothie.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "smoothies-wild-berries-smoothie",
+      "categoryId": "smoothies",
+      "order": 3,
+      "name": {
+        "en": "Wild berries smoothie",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Refreshing berry blend.",
+        "ar": ""
+      },
+      "image": "images/wild_berries_smoothie.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "special-drinks-cheese-cake-drink",
+      "categoryId": "special-drinks",
+      "order": 1,
+      "name": {
+        "en": "Cheese cake Drink",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Refreshing cheesecake blend.",
+        "ar": ""
+      },
+      "image": "images/cheese_cake_drink.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "special-drinks-greek-yogurt-drink",
+      "categoryId": "special-drinks",
+      "order": 2,
+      "name": {
+        "en": "Greek yogurt Drink",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Refreshing greek yogurt blend.",
+        "ar": ""
+      },
+      "image": "images/greek_yogurt_drink.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "sugar-free-s-f-vanilla-milkshake",
+      "categoryId": "sugar-free",
+      "order": 1,
+      "name": {
+        "en": "S.F. Vanilla milkshake",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Sugar-free vanilla shake.",
+        "ar": ""
+      },
+      "image": "images/sf_vanilla_milkshake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "sugar-free-s-f-caramel-milkshake",
+      "categoryId": "sugar-free",
+      "order": 2,
+      "name": {
+        "en": "S.F. Caramel milkshake",
+        "ar": ""
+      },
+      "price": "350 L.L",
+      "description": {
+        "en": "Sugar-free caramel shake.",
+        "ar": ""
+      },
+      "image": "images/sf_caramel_milkshake.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "sugar-free-s-f-vanilla-frappe",
+      "categoryId": "sugar-free",
+      "order": 3,
+      "name": {
+        "en": "S.F. Vanilla frappe",
+        "ar": ""
+      },
+      "price": "400 L.L",
+      "description": {
+        "en": "Sugar-free vanilla frappe.",
+        "ar": ""
+      },
+      "image": "images/sf_vanilla_frappe.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "sugar-free-s-f-caramel-frappe",
+      "categoryId": "sugar-free",
+      "order": 4,
+      "name": {
+        "en": "S.F. Caramel frappe",
+        "ar": ""
+      },
+      "price": "400 L.L",
+      "description": {
+        "en": "Sugar-free caramel frappe.",
+        "ar": ""
+      },
+      "image": "images/sf_caramel_frappe.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "crepura-boxes-crepura-box-nutella",
+      "categoryId": "crepura-boxes",
+      "order": 1,
+      "name": {
+        "en": "Crepura Box Nutella",
+        "ar": ""
+      },
+      "price": "6.5$",
+      "description": {
+        "en": "Nutella-filled crepura box.",
+        "ar": ""
+      },
+      "image": "images/crepura_box.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "crepura-boxes-crepura-box-oreo",
+      "categoryId": "crepura-boxes",
+      "order": 2,
+      "name": {
+        "en": "Crepura Box Oreo",
+        "ar": ""
+      },
+      "price": "8.5$",
+      "description": {
+        "en": "Oreo-filled crepura box.",
+        "ar": ""
+      },
+      "image": "images/crepura_box.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "crepura-boxes-crepura-box-lotus",
+      "categoryId": "crepura-boxes",
+      "order": 3,
+      "name": {
+        "en": "Crepura Box Lotus",
+        "ar": ""
+      },
+      "price": "8.5$",
+      "description": {
+        "en": "Lotus-filled crepura box.",
+        "ar": ""
+      },
+      "image": "images/crepura_box.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "crepura-boxes-crepura-box-pistachio",
+      "categoryId": "crepura-boxes",
+      "order": 4,
+      "name": {
+        "en": "Crepura Box Pistachio",
+        "ar": ""
+      },
+      "price": "8.5$",
+      "description": {
+        "en": "Pistachio-filled crepura box.",
+        "ar": ""
+      },
+      "image": "images/crepura_box.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "crepura-boxes-crepura-box-sitos",
+      "categoryId": "crepura-boxes",
+      "order": 5,
+      "name": {
+        "en": "Crepura Box Sitos",
+        "ar": ""
+      },
+      "price": "300 L.L",
+      "description": {
+        "en": "Sitos-filled crepura box.",
+        "ar": ""
+      },
+      "image": "images/sitos_box.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "add-ons-kinder",
+      "categoryId": "add-ons",
+      "order": 1,
+      "name": {
+        "en": "Kinder",
+        "ar": ""
+      },
+      "price": "50 L.L",
+      "description": {
+        "en": "Extra Kinder chocolate on top.",
+        "ar": ""
+      },
+      "image": "images/kinder_piece.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "add-ons-kinder-bueno",
+      "categoryId": "add-ons",
+      "order": 2,
+      "name": {
+        "en": "Kinder bueno",
+        "ar": ""
+      },
+      "price": "50 L.L",
+      "description": {
+        "en": "Extra Kinder bueno chocolate on top.",
+        "ar": ""
+      },
+      "image": "images/kinder_bueno_piece.avif",
+      "isAvailable": true
+    },
+    {
+      "id": "add-ons-oreo",
+      "categoryId": "add-ons",
+      "order": 3,
+      "name": {
+        "en": "Oreo",
+        "ar": ""
+      },
+      "price": "50 L.L",
+      "description": {
+        "en": "Extra Oreo biscuit on top.",
+        "ar": ""
+      },
+      "image": "images/oreo_piece.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "add-ons-lotus",
+      "categoryId": "add-ons",
+      "order": 4,
+      "name": {
+        "en": "Lotus",
+        "ar": ""
+      },
+      "price": "50 L.L",
+      "description": {
+        "en": "Extra Lotus biscuit on top.",
+        "ar": ""
+      },
+      "image": "images/lotus_piece.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "add-ons-corn-flakes",
+      "categoryId": "add-ons",
+      "order": 5,
+      "name": {
+        "en": "Corn flakes",
+        "ar": ""
+      },
+      "price": "50 L.L",
+      "description": {
+        "en": "Extra cornflakes on top.",
+        "ar": ""
+      },
+      "image": "images/cornflakes_piece.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "add-ons-extra-choclate",
+      "categoryId": "add-ons",
+      "order": 6,
+      "name": {
+        "en": "Extra choclate",
+        "ar": ""
+      },
+      "price": "150 L.L",
+      "description": {
+        "en": "Extra choclate of any kind.",
+        "ar": ""
+      },
+      "image": "images/extra_choclate.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "add-ons-marshmellows",
+      "categoryId": "add-ons",
+      "order": 7,
+      "name": {
+        "en": "Marshmellows",
+        "ar": ""
+      },
+      "price": "50 L.L",
+      "description": {
+        "en": "Extra marshmellows on top.",
+        "ar": ""
+      },
+      "image": "images/extra_marshmellow.webp",
+      "isAvailable": true
+    },
+    {
+      "id": "add-ons-strawberry",
+      "categoryId": "add-ons",
+      "order": 8,
+      "name": {
+        "en": "Strawberry",
+        "ar": ""
+      },
+      "price": "50 L.L",
+      "description": {
+        "en": "Extra Strawberries on top.",
+        "ar": ""
+      },
+      "image": "images/strawberry_piece.jpg",
+      "isAvailable": true
+    },
+    {
+      "id": "add-ons-banana",
+      "categoryId": "add-ons",
+      "order": 9,
+      "name": {
+        "en": "Banana",
+        "ar": ""
+      },
+      "price": "50 L.L",
+      "description": {
+        "en": "Extra Bananas on top.",
+        "ar": ""
+      },
+      "image": "images/banana_piece.jpg",
+      "isAvailable": true
+    }
+  ]
+}

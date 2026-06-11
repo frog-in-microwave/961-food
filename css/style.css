@@ -1,0 +1,450 @@
+:root {
+  --cyan: #48dbfb;
+  --pink: #ff6b81;
+  --dark: #1a1a1a;
+  --text-muted: #636e72;
+  --off-white: #f7f9fc;
+  --white: #ffffff;
+  --off-cyan: #a2eeff;
+  --loader-bg: #e0e0e0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+  Outfit is the default font.
+  Cairo is loaded too because it supports Arabic nicely.
+*/
+body {
+  background-color: var(--off-white);
+  color: var(--dark);
+  background-image: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  min-height: 100vh;
+  font-family: "Outfit", "Cairo", sans-serif;
+}
+
+/* 
+  When Arabic is active, use Cairo first.
+*/
+html[dir="rtl"] body {
+  font-family: "Cairo", "Outfit", sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+header {
+  text-align: center;
+  padding: 2.5rem 1rem 1.2rem;
+  background: var(--white);
+}
+
+.logo {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  background: linear-gradient(45deg, var(--dark) 30%, var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-top: 0.2rem;
+}
+
+/* ================= LANGUAGE TOGGLE ================= */
+
+.language-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.lang-btn {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: var(--off-white);
+  color: var(--dark);
+  font-weight: 900;
+  font-size: 0.8rem;
+  padding: 7px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+  background: var(--pink);
+  color: var(--white);
+  border-color: var(--pink);
+}
+
+/* ================= CATEGORY NAVIGATION ================= */
+
+#category-nav {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, var(--cyan) 0%, var(--pink) 100%);
+  z-index: 100;
+  padding: 12px 0;
+  box-shadow: 0 4px 15px rgba(255, 107, 129, 0.2);
+}
+
+.nav-scroll-wrapper {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0 15px;
+  gap: 8px;
+  scrollbar-width: none;
+}
+
+.nav-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  font-size: 0.8rem;
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: var(--white);
+  color: var(--pink);
+  border-color: var(--white);
+  transform: scale(1.05);
+}
+
+/* ================= MAIN CONTENT ================= */
+
+#menu-container {
+  padding: 2rem 1.2rem 5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--off-cyan);
+}
+
+.status-message {
+  text-align: center;
+  font-weight: 900;
+  padding: 2rem;
+}
+
+.status-message.error {
+  color: var(--pink);
+}
+
+.category-section {
+  scroll-margin-top: 100px;
+  margin-bottom: 4rem;
+}
+
+.category-divider {
+  margin: 10px 0;
+  border: 1px solid var(--pink);
+  border-radius: 10px;
+}
+
+.category-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.category-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+
+  /*
+    Logical property:
+    English starts from left.
+    Arabic starts from right.
+  */
+  inset-inline-start: 0;
+
+  width: 60px;
+  height: 6px;
+  background: var(--cyan);
+  border-radius: 10px;
+}
+
+/* ================= PRODUCT CARDS ================= */
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  display: flex;
+  height: 115px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateX(8px);
+  border-color: var(--pink);
+}
+
+/* Reverse hover movement for Arabic */
+html[dir="rtl"] .card:hover {
+  transform: translateX(-8px);
+}
+
+.card-img-container {
+  width: 115px;
+  flex-shrink: 0;
+  position: relative;
+  background-color: var(--loader-bg);
+}
+
+/* Skeleton shimmer while image is loading */
+.card-img-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    var(--loader-bg) 0%,
+    #f0f0f0 50%,
+    var(--loader-bg) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  z-index: 1;
+}
+
+.card-img-container.loaded::after {
+  display: none;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  position: relative;
+  z-index: 2;
+}
+
+.card-img-container.loaded img {
+  opacity: 1;
+}
+
+.card-info {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.card-price {
+  color: var(--pink);
+  font-weight: 900;
+  background: rgba(255, 107, 129, 0.08);
+  padding: 2px 12px;
+  border-radius: 12px;
+  width: fit-content;
+}
+
+/* ================= MODAL ================= */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: white;
+  width: 92%;
+  max-width: 400px;
+  border-radius: 35px;
+  overflow: hidden;
+  transform: translateY(30px);
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+}
+
+.modal.active .modal-content {
+  transform: translateY(0);
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+
+  /*
+    Logical property:
+    English: right side.
+    Arabic: left side.
+  */
+  inset-inline-end: 15px;
+
+  background: white;
+  width: 35px;
+  height: 35px;
+  border: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  z-index: 11;
+}
+
+#modal-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-bottom: 6px solid var(--cyan);
+}
+
+.modal-text {
+  padding: 2rem;
+  text-align: center;
+}
+
+.modal-price {
+  color: var(--pink);
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: var(--white);
+  padding: 3rem 1.5rem 1rem;
+  border-top: 4px solid var(--pink);
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+}
+
+.footer-map {
+  border-radius: 25px;
+  overflow: hidden;
+  border: 2px solid var(--cyan);
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 1.5rem;
+}
+
+.social-icons a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: var(--dark);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+  background: var(--pink);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  color: #ccc;
+  font-size: 0.8rem;
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem;
+}
+
+/* ================= DESKTOP ================= */
+
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: center;
+  }
+}
