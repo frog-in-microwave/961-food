@@ -79,7 +79,25 @@ html[dir="rtl"] body {
   justify-content: center;
   margin-top: 1rem;
 }
+.phone-number {
+  margin-top: 0.8rem;
+  color: var(--brand-white);
+  font-size: 1rem;
+  font-weight: 900;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 0.25s ease;
+}
 
+.phone-number:hover {
+  color: var(--brand-yellow);
+}
+.phone-number,
+.card-price,
+.modal-price {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
 .logo {
   font-family: var(--font-display);
   text-transform: uppercase;
