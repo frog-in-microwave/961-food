@@ -9,8 +9,16 @@
       }
     },
     {
-      "id": "extras",
+      "id": "meals",
       "order": 2,
+      "name": {
+        "en": "MEALS",
+        "ar": "وجبات"
+      }
+    },
+    {
+      "id": "extras",
+      "order": 3,
       "name": {
         "en": "EXTRAS",
         "ar": "إضافات"
@@ -18,7 +26,7 @@
     },
     {
       "id": "sauces",
-      "order": 3,
+      "order": 4,
       "name": {
         "en": "SAUCES",
         "ar": "صوصات"
@@ -26,7 +34,7 @@
     },
     {
       "id": "drinks",
-      "order": 4,
+      "order": 5,
       "name": {
         "en": "DRINKS",
         "ar": "مشروبات"
@@ -35,51 +43,35 @@
   ],
   "products": [
     {
-      "id": "fahita-small",
+      "id": "shrimp",
       "categoryId": "sandwiches",
       "order": 1,
       "name": {
-        "en": "FAHITA SMALL",
-        "ar": "فاهيتا سمول"
+        "en": "SHRIMP",
+        "ar": "قريدس"
       },
-      "price": "350,000 L.L.",
+      "price": "300,000 L.L.",
       "description": {
-        "en": "A small fahita-style sandwich with seasoned chicken, sauce, and fresh fillings.",
-        "ar": "ساندويش فاهيتا صغير مع دجاج متبّل، صوص، وحشوات طازجة."
+        "en": "A shrimp sandwich prepared with seasoned shrimp, sauce, and fresh fillings.",
+        "ar": "ساندويش قريدس مع قريدس متبّل، صوص، وحشوات طازجة."
       },
-      "image": "images/fahita-small.jpeg",
+      "image": "images/shrimp.jpeg",
       "isAvailable": true
     },
     {
-      "id": "fahita-large",
+      "id": "escalope",
       "categoryId": "sandwiches",
       "order": 2,
       "name": {
-        "en": "FAHITA LARGE",
-        "ar": "فاهيتا لارج"
+        "en": "ESCALOPE",
+        "ar": "إسكالوب"
       },
-      "price": "450,000 L.L.",
+      "price": "250,000 L.L.",
       "description": {
-        "en": "A large fahita-style sandwich with seasoned chicken, sauce, and fresh fillings.",
-        "ar": "ساندويش فاهيتا كبير مع دجاج متبّل، صوص، وحشوات طازجة."
+        "en": "A crispy escalope sandwich served with sauce and fresh fillings.",
+        "ar": "ساندويش إسكالوب مقرمش يُقدّم مع صوص وحشوات طازجة."
       },
-      "image": "images/fahita-large.jpeg",
-      "isAvailable": true
-    },
-    {
-      "id": "zinger",
-      "categoryId": "sandwiches",
-      "order": 3,
-      "name": {
-        "en": "ZINGER",
-        "ar": "زنجر"
-      },
-      "price": "350,000 L.L.",
-      "description": {
-        "en": "A spicy crispy chicken sandwich served with sauce and fresh fillings.",
-        "ar": "ساندويش دجاج كريسبي حار يُقدّم مع صوص وحشوات طازجة."
-      },
-      "image": "images/zinger.jpeg",
+      "image": "images/escalope.jpeg",
       "isAvailable": true
     },
     {
@@ -96,22 +88,6 @@
         "ar": "ساندويش دجاج كريسبي يُحضّر طازجاً ويُقدّم ساخناً."
       },
       "image": "images/crispy.jpeg",
-      "isAvailable": true
-    },
-    {
-      "id": "nuggets",
-      "categoryId": "sandwiches",
-      "order": 5,
-      "name": {
-        "en": "NUGGETS",
-        "ar": "ناجتس"
-      },
-      "price": "250,000 L.L.",
-      "description": {
-        "en": "A nuggets sandwich with crispy chicken pieces, sauce, and fresh fillings.",
-        "ar": "ساندويش ناجتس مع قطع دجاج كريسبي، صوص، وحشوات طازجة."
-      },
-      "image": "images/burger.jpeg",
       "isAvailable": true
     },
     {
@@ -275,6 +251,86 @@
       "isAvailable": true
     },
     {
+      "id": "zinger",
+      "categoryId": "sandwiches",
+      "order": 16,
+      "name": {
+        "en": "ZINGER",
+        "ar": "زنجر"
+      },
+      "price": "350,000 L.L.",
+      "description": {
+        "en": "A spicy crispy chicken sandwich served with sauce and fresh fillings.",
+        "ar": "ساندويش دجاج كريسبي حار يُقدّم مع صوص وحشوات طازجة."
+      },
+      "image": "images/zinger.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "3-piece-crispy",
+      "categoryId": "meals",
+      "order": 1,
+      "name": {
+        "en": "3 PIECE CRISPY",
+        "ar": "كريسبي 3 قطع"
+      },
+      "price": "700,000 L.L.",
+      "description": {
+        "en": "A 3 piece crispy chicken meal served with crispy fries and a cold drink.",
+        "ar": "وجبة كريسبي 3 قطع تُقدّم مع بطاطا مقرمشة ومشروب بارد."
+      },
+      "image": "images/3-piece-crispy.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "5-piece-crispy",
+      "categoryId": "meals",
+      "order": 2,
+      "name": {
+        "en": "5 PIECE CRISPY",
+        "ar": "كريسبي 5 قطع"
+      },
+      "price": "900,000 L.L.",
+      "description": {
+        "en": "A 5 piece crispy chicken meal served with crispy fries and a cold drink.",
+        "ar": "وجبة كريسبي 5 قطع تُقدّم مع بطاطا مقرمشة ومشروب بارد."
+      },
+      "image": "images/5-piece-crispy.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "8-piece-crispy",
+      "categoryId": "meals",
+      "order": 3,
+      "name": {
+        "en": "8 PIECE CRISPY",
+        "ar": "كريسبي 8 قطع"
+      },
+      "price": "1,200,000 L.L.",
+      "description": {
+        "en": "An 8 piece crispy chicken meal served with crispy fries and a cold drink.",
+        "ar": "وجبة كريسبي 8 قطع تُقدّم مع بطاطا مقرمشة ومشروب بارد."
+      },
+      "image": "images/8-piece-crispy.jpeg",
+      "isAvailable": true
+    },
+    {
+      "id": "12-piece-crispy",
+      "categoryId": "meals",
+      "order": 4,
+      "name": {
+        "en": "12 PIECE CRISPY",
+        "ar": "كريسبي 12 قطعة"
+      },
+      "price": "1,800,000 L.L.",
+      "description": {
+        "en": "A 12 piece crispy chicken meal served with crispy fries and a cold drink.",
+        "ar": "وجبة كريسبي 12 قطعة تُقدّم مع بطاطا مقرمشة ومشروب بارد."
+      },
+      "image": "images/12-piece-crispy.jpeg",
+      "isAvailable": true
+    },
+    {
       "id": "fries-small",
       "categoryId": "extras",
       "order": 1,
@@ -282,7 +338,7 @@
         "en": "FRIES-SMALL",
         "ar": "بطاطا صغيرة"
       },
-      "price": "150,000 L.L.",
+      "price": "300,000 L.L.",
       "description": {
         "en": "A small portion of crispy golden fries served hot.",
         "ar": "حصة صغيرة من البطاطا الذهبية المقرمشة تُقدّم ساخنة."
@@ -298,7 +354,7 @@
         "en": "FRIES-LARGE",
         "ar": "بطاطا كبيرة"
       },
-      "price": "250,000 L.L.",
+      "price": "600,000 L.L.",
       "description": {
         "en": "A large portion of crispy golden fries served hot.",
         "ar": "حصة كبيرة من البطاطا الذهبية المقرمشة تُقدّم ساخنة."

@@ -5,7 +5,7 @@
   ===============================
 */
 
-let currentLanguage = localStorage.getItem("restaurant-language") || "en";
+let currentLanguage = localStorage.getItem("restaurant-language") || "ar";
 
 let menuData = null;
 
