@@ -375,7 +375,7 @@
         "en": "A classic cocktail sauce with a smooth and slightly tangy flavor.",
         "ar": "صوص كوكتيل كلاسيكي بنكهة ناعمة وحموضة خفيفة."
       },
-      "image": "images/cocktail-sauce.jpeg",
+      "image": "data/images/cocktail.jpg",
       "isAvailable": true
     },
     {
@@ -391,7 +391,7 @@
         "en": "A spicy sauce for customers who like extra heat.",
         "ar": "صوص حار لمحبي النكهة القوية والحارة."
       },
-      "image": "images/hot-sauce.jpeg",
+      "image": "data/images/hot-sauce.jpg",
       "isAvailable": true
     },
     {
@@ -407,7 +407,7 @@
         "en": "A smoky barbecue sauce with a sweet and savory taste.",
         "ar": "صوص باربكيو مدخّن بطعم حلو ومالح."
       },
-      "image": "images/bbq-sauce.jpeg",
+      "image": "data/images/barbicue.jpg",
       "isAvailable": true
     },
     {
@@ -423,23 +423,7 @@
         "en": "A rich cheddar cheese sauce for sandwiches, fries, and sides.",
         "ar": "صوص جبنة شيدر غني للساندويشات والبطاطا والإضافات."
       },
-      "image": "images/cheddar-sauce.jpeg",
-      "isAvailable": true
-    },
-    {
-      "id": "ranch",
-      "categoryId": "sauces",
-      "order": 6,
-      "name": {
-        "en": "RANCH SAUCE",
-        "ar": "صوص رانش"
-      },
-      "price": "50,000 L.L.",
-      "description": {
-        "en": "A creamy ranch sauce with a fresh and savory flavor.",
-        "ar": "صوص رانش كريمي بنكهة طازجة ولذيذة."
-      },
-      "image": "images/ranch-sauce.jpeg",
+      "image": "data/images/cheddar.jpg",
       "isAvailable": true
     },
     {
@@ -455,7 +439,7 @@
         "en": "A cold Pepsi soft drink.",
         "ar": "مشروب بيبسي بارد."
       },
-      "image": "images/pepsi.jpeg",
+      "image": "data/images/pepsi.jpg",
       "isAvailable": true
     },
     {
@@ -471,7 +455,7 @@
         "en": "A cold Mirinda soft drink.",
         "ar": "مشروب ميرندا بارد."
       },
-      "image": "images/mirinda.jpeg",
+      "image": "data/images/mirinda.jpg",
       "isAvailable": true
     },
     {
@@ -487,23 +471,7 @@
         "en": "A cold lemon-lime soft drink.",
         "ar": "مشروب غازي بارد بنكهة الليمون."
       },
-      "image": "images/seven-up.jpeg",
-      "isAvailable": true
-    },
-    {
-      "id": "ayran",
-      "categoryId": "drinks",
-      "order": 4,
-      "name": {
-        "en": "AYRAN",
-        "ar": "عيران"
-      },
-      "price": "100,000 L.L.",
-      "description": {
-        "en": "A refreshing cold ayran yogurt drink.",
-        "ar": "مشروب عيران بارد ومنعش."
-      },
-      "image": "images/ayran.jpeg",
+      "image": "data/images/7up.jpg",
       "isAvailable": true
     },
     {
@@ -519,7 +487,7 @@
         "en": "A cold bottle of water.",
         "ar": "عبوة مياه باردة."
       },
-      "image": "images/water.jpeg",
+      "image": "data/images/water.avif",
       "isAvailable": true
     }
   ]
