@@ -55,7 +55,7 @@
         "en": "A shrimp sandwich prepared with seasoned shrimp, sauce, and fresh fillings.",
         "ar": "ساندويش قريدس مع قريدس متبّل، صوص، وحشوات طازجة."
       },
-      "image": "images/shrimp.jpeg",
+      "image": "data/images/shrimp.jpg",
       "isAvailable": true
     },
     {
@@ -71,7 +71,7 @@
         "en": "A crispy escalope sandwich served with sauce and fresh fillings.",
         "ar": "ساندويش إسكالوب مقرمش يُقدّم مع صوص وحشوات طازجة."
       },
-      "image": "images/escalope.jpeg",
+      "image": "data/images/escalope.jpg",
       "isAvailable": true
     },
     {
@@ -87,7 +87,7 @@
         "en": "A crispy chicken sandwich prepared fresh and served hot.",
         "ar": "ساندويش دجاج كريسبي يُحضّر طازجاً ويُقدّم ساخناً."
       },
-      "image": "images/crispy.jpeg",
+      "image": "data/images/crispy.jpg",
       "isAvailable": true
     },
     {
@@ -103,7 +103,7 @@
         "en": "A Lebanese sawda sandwich with tender seasoned liver and bold flavor.",
         "ar": "ساندويش سودا لبناني مع كبدة متبّلة ونكهة قوية."
       },
-      "image": "images/sawda.jpeg",
+      "image": "data/images/sawda.jpg",
       "isAvailable": true
     },
     {
@@ -119,7 +119,7 @@
         "en": "A classic rosto sandwich with sliced roast beef, sauce, and fresh fillings.",
         "ar": "ساندويش روستو كلاسيكي مع شرائح لحم، صوص، وحشوات طازجة."
       },
-      "image": "images/burger.jpeg",
+      "image": "data/images/rosto.jpg",
       "isAvailable": true
     },
     {
@@ -135,7 +135,7 @@
         "en": "A Lebanese sojok sandwich with spiced sausage and rich flavor.",
         "ar": "ساندويش سوجوك لبناني مع سجق متبّل ونكهة غنية."
       },
-      "image": "images/sojok.jpeg",
+      "image": "data/images/sojok.jpg",
       "isAvailable": true
     },
     {
@@ -151,7 +151,7 @@
         "en": "A makanek sandwich with Lebanese-style mini sausages and savory seasoning.",
         "ar": "ساندويش مقانق مع نقانق لبنانية صغيرة وتتبيلة شهية."
       },
-      "image": "images/makanek.jpeg",
+      "image": "data/images/makanek.jpg",
       "isAvailable": true
     },
     {
@@ -167,7 +167,7 @@
         "en": "A fatayel sandwich with seasoned meat and classic Lebanese flavor.",
         "ar": "ساندويش فتايل مع لحم متبّل ونكهة لبنانية كلاسيكية."
       },
-      "image": "images/fatayel.jpeg",
+      "image": "data/images/fatayel.jpg",
       "isAvailable": true
     },
     {
@@ -183,7 +183,7 @@
         "en": "A traditional nkhaat sandwich prepared with Lebanese seasoning and fresh toppings.",
         "ar": "ساندويش نخاعات تقليدي يُحضّر بتتبيلة لبنانية وحشوات طازجة."
       },
-      "image": "images/nkaat.jpeg",
+      "image": "data/images/nkhaat.jpg",
       "isAvailable": true
     },
     {
@@ -199,7 +199,7 @@
         "en": "A grilled chicken tawoouk sandwich with garlic sauce and fresh fillings.",
         "ar": "ساندويش طاووق مشوي مع صوص الثوم وحشوات طازجة."
       },
-      "image": "images/tawoouk.jpeg",
+      "image": "data/images/tawook.jpg",
       "isAvailable": true
     },
     {
@@ -215,7 +215,7 @@
         "en": "A Lebanese kafta sandwich with seasoned grilled meat and fresh fillings.",
         "ar": "ساندويش كفتا لبناني مع لحم مشوي متبّل وحشوات طازجة."
       },
-      "image": "images/kafta.jpeg",
+      "image": "data/images/kafta.jpg",
       "isAvailable": true
     },
     {
@@ -231,7 +231,7 @@
         "en": "A beef burger sandwich with a juicy beef patty, sauce, and fresh toppings.",
         "ar": "ساندويش برغر لحم مع قطعة لحم طرية، صوص، وإضافات طازجة."
       },
-      "image": "images/beef-burger.jpeg",
+      "image": "data/images/beef-burger.jpg",
       "isAvailable": true
     },
     {
@@ -247,7 +247,7 @@
         "en": "A chicken burger sandwich with a tender chicken patty, sauce, and fresh toppings.",
         "ar": "ساندويش برغر دجاج مع قطعة دجاج طرية، صوص، وإضافات طازجة."
       },
-      "image": "images/chickenburger.jpeg",
+      "image": "data/images/chiken-burger.jpg",
       "isAvailable": true
     },
     {
@@ -263,7 +263,7 @@
         "en": "A spicy crispy chicken sandwich served with sauce and fresh fillings.",
         "ar": "ساندويش دجاج كريسبي حار يُقدّم مع صوص وحشوات طازجة."
       },
-      "image": "images/zinger.jpeg",
+      "image": "data/images/zinger.jpg",
       "isAvailable": true
     },
     {
@@ -279,7 +279,7 @@
         "en": "A 3 piece crispy chicken meal served with crispy fries and a cold drink.",
         "ar": "وجبة كريسبي 3 قطع تُقدّم مع بطاطا مقرمشة ومشروب بارد."
       },
-      "image": "images/3-piece-crispy.jpeg",
+      "image": "data/images/3-piece-crispy.jpg",
       "isAvailable": true
     },
     {
@@ -295,7 +295,7 @@
         "en": "A 5 piece crispy chicken meal served with crispy fries and a cold drink.",
         "ar": "وجبة كريسبي 5 قطع تُقدّم مع بطاطا مقرمشة ومشروب بارد."
       },
-      "image": "images/5-piece-crispy.jpeg",
+      "image": "data/images/5-piece-crispy.jpg",
       "isAvailable": true
     },
     {
@@ -311,7 +311,7 @@
         "en": "An 8 piece crispy chicken meal served with crispy fries and a cold drink.",
         "ar": "وجبة كريسبي 8 قطع تُقدّم مع بطاطا مقرمشة ومشروب بارد."
       },
-      "image": "images/8-piece-crispy.jpeg",
+      "image": "data/images/8-piece-crispy.jpg",
       "isAvailable": true
     },
     {
@@ -327,7 +327,7 @@
         "en": "A 12 piece crispy chicken meal served with crispy fries and a cold drink.",
         "ar": "وجبة كريسبي 12 قطعة تُقدّم مع بطاطا مقرمشة ومشروب بارد."
       },
-      "image": "images/12-piece-crispy.jpeg",
+      "image": "data/images/12-piece-crispy.jpg",
       "isAvailable": true
     },
     {
@@ -343,7 +343,7 @@
         "en": "A small portion of crispy golden fries served hot.",
         "ar": "حصة صغيرة من البطاطا الذهبية المقرمشة تُقدّم ساخنة."
       },
-      "image": "images/fries-small.jpeg",
+      "image": "data/images/small-fries.jpg",
       "isAvailable": true
     },
     {
@@ -359,71 +359,7 @@
         "en": "A large portion of crispy golden fries served hot.",
         "ar": "حصة كبيرة من البطاطا الذهبية المقرمشة تُقدّم ساخنة."
       },
-      "image": "images/fries-large.jpeg",
-      "isAvailable": true
-    },
-    {
-      "id": "mayonnaise-salad-small",
-      "categoryId": "extras",
-      "order": 3,
-      "name": {
-        "en": "MAYONNAISE-SALAD-SMALL",
-        "ar": "سلطة مايونيز صغيرة"
-      },
-      "price": "100,000 L.L.",
-      "description": {
-        "en": "A small mayonnaise salad side served fresh and chilled.",
-        "ar": "حصة صغيرة من سلطة المايونيز تُقدّم طازجة وباردة."
-      },
-      "image": "images/mayonnaise-salad-small.jpeg",
-      "isAvailable": true
-    },
-    {
-      "id": "mayonnaise-salad-large",
-      "categoryId": "extras",
-      "order": 4,
-      "name": {
-        "en": "MAYONNAISE-SALAD-LARGE",
-        "ar": "سلطة مايونيز كبيرة"
-      },
-      "price": "200,000 L.L.",
-      "description": {
-        "en": "A large mayonnaise salad side served fresh and chilled.",
-        "ar": "حصة كبيرة من سلطة المايونيز تُقدّم طازجة وباردة."
-      },
-      "image": "images/mayonnaise-salad-large.jpeg",
-      "isAvailable": true
-    },
-    {
-      "id": "toum-small",
-      "categoryId": "extras",
-      "order": 1,
-      "name": {
-        "en": "TOUM SMALL",
-        "ar": "صوص الثوم صغيرة"
-      },
-      "price": "100,000 L.L.",
-      "description": {
-        "en": "A creamy garlic sauce that pairs perfectly with chicken sandwiches and fries.",
-        "ar": "صوص ثوم كريمي يناسب ساندويشات الدجاج والبطاطا."
-      },
-      "image": "images/garlic-sauce.jpeg",
-      "isAvailable": true
-    },
-    {
-      "id": "toum-large",
-      "categoryId": "extras",
-      "order": 1,
-      "name": {
-        "en": "TOUM LARGE",
-        "ar": "صوص الثوم كبيرة"
-      },
-      "price": "150,000 L.L.",
-      "description": {
-        "en": "A creamy garlic sauce that pairs perfectly with chicken sandwiches and fries.",
-        "ar": "صوص ثوم كريمي يناسب ساندويشات الدجاج والبطاطا."
-      },
-      "image": "images/garlic-sauce.jpeg",
+      "image": "data/images/large-fries.jpg",
       "isAvailable": true
     },
     {
@@ -504,22 +440,6 @@
         "ar": "صوص رانش كريمي بنكهة طازجة ولذيذة."
       },
       "image": "images/ranch-sauce.jpeg",
-      "isAvailable": true
-    },
-    {
-      "id": "honey-mustard",
-      "categoryId": "sauces",
-      "order": 7,
-      "name": {
-        "en": "HONEY MUSTARD",
-        "ar": " عسل وخردل"
-      },
-      "price": "50,000 L.L.",
-      "description": {
-        "en": "A sweet and tangy honey mustard sauce for chicken and fries.",
-        "ar": "صوص عسل وخردل بطعم حلو وحامض يناسب الدجاج والبطاطا."
-      },
-      "image": "images/honey-mustard-sauce.jpeg",
       "isAvailable": true
     },
     {
