@@ -96,7 +96,7 @@
       "order": 6,
       "name": {
         "en": "SAWDA",
-        "ar": "سودا"
+        "ar": "سودة"
       },
       "price": "250,000 L.L.",
       "description": {
@@ -128,7 +128,7 @@
       "order": 8,
       "name": {
         "en": "SOJOK",
-        "ar": "سوجوك"
+        "ar": "سجق"
       },
       "price": "250,000 L.L.",
       "description": {
@@ -208,7 +208,7 @@
       "order": 13,
       "name": {
         "en": "KAFTA",
-        "ar": "كفتا"
+        "ar": "كفتة"
       },
       "price": "250,000 L.L.",
       "description": {
@@ -258,7 +258,7 @@
         "en": "ZINGER",
         "ar": "زنجر"
       },
-      "price": "350,000 L.L.",
+      "price": "450,000 L.L.",
       "description": {
         "en": "A spicy crispy chicken sandwich served with sauce and fresh fillings.",
         "ar": "ساندويش دجاج كريسبي حار يُقدّم مع صوص وحشوات طازجة."
