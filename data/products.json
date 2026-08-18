@@ -482,12 +482,28 @@
         "en": "WATER",
         "ar": "مياه"
       },
-      "price": "50,000 L.L.",
+      "price": "30,000 L.L.",
       "description": {
         "en": "A cold bottle of water.",
         "ar": "عبوة مياه باردة."
       },
       "image": "data/images/water.avif",
+      "isAvailable": true
+    },
+    {
+      "id": "Laban",
+      "categoryId": "drinks",
+      "order": 5,
+      "name": {
+        "en": "Laban",
+        "ar": "لبن"
+      },
+      "price": "100,000 L.L.",
+      "description": {
+        "en": "A cold bottle of laban.",
+        "ar": "عبوة لبن باردة."
+      },
+      "image": "data/images/ayran.avif",
       "isAvailable": true
     }
   ]
