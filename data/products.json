@@ -66,7 +66,7 @@
         "en": "ESCALOPE",
         "ar": "إسكالوب"
       },
-      "price": "250,000 L.L.",
+      "price": "300,000 L.L.",
       "description": {
         "en": "A crispy escalope sandwich served with sauce and fresh fillings.",
         "ar": "ساندويش إسكالوب مقرمش يُقدّم مع صوص وحشوات طازجة."
@@ -82,7 +82,7 @@
         "en": "CRISPY",
         "ar": "كريسبي"
       },
-      "price": "250,000 L.L.",
+      "price": "300,000 L.L.",
       "description": {
         "en": "A crispy chicken sandwich prepared fresh and served hot.",
         "ar": "ساندويش دجاج كريسبي يُحضّر طازجاً ويُقدّم ساخناً."
@@ -98,7 +98,7 @@
         "en": "SAWDA",
         "ar": "سودة"
       },
-      "price": "250,000 L.L.",
+      "price": "300,000 L.L.",
       "description": {
         "en": "A Lebanese sawda sandwich with tender seasoned liver and bold flavor.",
         "ar": "ساندويش سودا لبناني مع كبدة متبّلة ونكهة قوية."
@@ -114,7 +114,7 @@
         "en": "ROSTO",
         "ar": "روستو"
       },
-      "price": "300,000 L.L.",
+      "price": "350,000 L.L.",
       "description": {
         "en": "A classic rosto sandwich with sliced roast beef, sauce, and fresh fillings.",
         "ar": "ساندويش روستو كلاسيكي مع شرائح لحم، صوص، وحشوات طازجة."
@@ -130,7 +130,7 @@
         "en": "SOJOK",
         "ar": "سجق"
       },
-      "price": "250,000 L.L.",
+      "price": "300,000 L.L.",
       "description": {
         "en": "A Lebanese sojok sandwich with spiced sausage and rich flavor.",
         "ar": "ساندويش سوجوك لبناني مع سجق متبّل ونكهة غنية."
@@ -146,7 +146,7 @@
         "en": "MAKANEK",
         "ar": "مقانق"
       },
-      "price": "250,000 L.L.",
+      "price": "300,000 L.L.",
       "description": {
         "en": "A makanek sandwich with Lebanese-style mini sausages and savory seasoning.",
         "ar": "ساندويش مقانق مع نقانق لبنانية صغيرة وتتبيلة شهية."
@@ -162,7 +162,7 @@
         "en": "FATAYEL",
         "ar": "فتايل"
       },
-      "price": "250,000 L.L.",
+      "price": "300,000 L.L.",
       "description": {
         "en": "A fatayel sandwich with seasoned meat and classic Lebanese flavor.",
         "ar": "ساندويش فتايل مع لحم متبّل ونكهة لبنانية كلاسيكية."
@@ -178,7 +178,7 @@
         "en": "NKHAAT",
         "ar": "نخاعات"
       },
-      "price": "250,000 L.L.",
+      "price": "300,000 L.L.",
       "description": {
         "en": "A traditional nkhaat sandwich prepared with Lebanese seasoning and fresh toppings.",
         "ar": "ساندويش نخاعات تقليدي يُحضّر بتتبيلة لبنانية وحشوات طازجة."
@@ -194,7 +194,7 @@
         "en": "TAWOOUK",
         "ar": "طاووق"
       },
-      "price": "250,000 L.L.",
+      "price": "300,000 L.L.",
       "description": {
         "en": "A grilled chicken tawoouk sandwich with garlic sauce and fresh fillings.",
         "ar": "ساندويش طاووق مشوي مع صوص الثوم وحشوات طازجة."
@@ -210,7 +210,7 @@
         "en": "KAFTA",
         "ar": "كفتة"
       },
-      "price": "250,000 L.L.",
+      "price": "300,000 L.L.",
       "description": {
         "en": "A Lebanese kafta sandwich with seasoned grilled meat and fresh fillings.",
         "ar": "ساندويش كفتا لبناني مع لحم مشوي متبّل وحشوات طازجة."
@@ -226,7 +226,7 @@
         "en": "BEEF-BURGER",
         "ar": "برغر لحم"
       },
-      "price": "250,000 L.L.",
+      "price": "300,000 L.L.",
       "description": {
         "en": "A beef burger sandwich with a juicy beef patty, sauce, and fresh toppings.",
         "ar": "ساندويش برغر لحم مع قطعة لحم طرية، صوص، وإضافات طازجة."
@@ -242,7 +242,7 @@
         "en": "CHICKENBURGER",
         "ar": "برغر دجاج"
       },
-      "price": "250,000 L.L.",
+      "price": "300,000 L.L.",
       "description": {
         "en": "A chicken burger sandwich with a tender chicken patty, sauce, and fresh toppings.",
         "ar": "ساندويش برغر دجاج مع قطعة دجاج طرية، صوص، وإضافات طازجة."
