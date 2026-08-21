@@ -267,6 +267,22 @@
       "isAvailable": true
     },
     {
+      "id": "nuggets",
+      "categoryId": "sandwiches",
+      "order": 16,
+      "name": {
+        "en": "NUGGETS",
+        "ar": "ناجتس"
+      },
+      "price": "300,000 L.L.",
+      "description": {
+        "en": "Crispy chicken nuggets served with a delicious sauce.",
+        "ar": "قطع ناجتس دجاج مقرمشة تقدم مع صوص لذيذ."
+      },
+      "image": "data/images/nuggets.jpg",
+      "isAvailable": true
+    },
+    {
       "id": "3-piece-crispy",
       "categoryId": "meals",
       "order": 1,
