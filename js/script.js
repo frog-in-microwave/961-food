@@ -17,7 +17,7 @@ const siteText = {
   en: {
     tagline: "Snacks & More",
     visitUs: "Visit Us",
-    location: "Lebanon",
+    location: "Ghazieh",
     footerBottom: "© 2026 961 Food. Built for speed.",
     loading: "Loading menu...",
     error: "Menu failed to load. Please try again later.",
@@ -28,7 +28,7 @@ const siteText = {
   ar: {
     tagline: "سناكس وأكثر",
     visitUs: "زورونا",
-    location: "لبنان",
+    location: "غازية",
     footerBottom: "© 2026 961 Food. صُمم للسرعة.",
     loading: "جارٍ تحميل القائمة...",
     error: "تعذر تحميل القائمة. يرجى المحاولة لاحقًا.",

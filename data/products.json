@@ -50,7 +50,7 @@
         "en": "SHRIMP",
         "ar": "قريدس"
       },
-      "price": "300,000 L.L.",
+      "price": "250,000 L.L.",
       "description": {
         "en": "A shrimp sandwich prepared with seasoned shrimp, sauce, and fresh fillings.",
         "ar": "ساندويش قريدس مع قريدس متبّل، صوص، وحشوات طازجة."
@@ -66,7 +66,7 @@
         "en": "ESCALOPE",
         "ar": "إسكالوب"
       },
-      "price": "300,000 L.L.",
+      "price": "250,000 L.L.",
       "description": {
         "en": "A crispy escalope sandwich served with sauce and fresh fillings.",
         "ar": "ساندويش إسكالوب مقرمش يُقدّم مع صوص وحشوات طازجة."
@@ -77,12 +77,12 @@
     {
       "id": "crispy",
       "categoryId": "sandwiches",
-      "order": 4,
+      "order": 3,
       "name": {
         "en": "CRISPY",
         "ar": "كريسبي"
       },
-      "price": "300,000 L.L.",
+      "price": "250,000 L.L.",
       "description": {
         "en": "A crispy chicken sandwich prepared fresh and served hot.",
         "ar": "ساندويش دجاج كريسبي يُحضّر طازجاً ويُقدّم ساخناً."
@@ -93,12 +93,12 @@
     {
       "id": "sawda",
       "categoryId": "sandwiches",
-      "order": 6,
+      "order": 4,
       "name": {
         "en": "SAWDA",
         "ar": "سودة"
       },
-      "price": "300,000 L.L.",
+      "price": "250,000 L.L.",
       "description": {
         "en": "A Lebanese sawda sandwich with tender seasoned liver and bold flavor.",
         "ar": "ساندويش سودا لبناني مع كبدة متبّلة ونكهة قوية."
@@ -107,30 +107,14 @@
       "isAvailable": true
     },
     {
-      "id": "rosto",
-      "categoryId": "sandwiches",
-      "order": 7,
-      "name": {
-        "en": "ROSTO",
-        "ar": "روستو"
-      },
-      "price": "350,000 L.L.",
-      "description": {
-        "en": "A classic rosto sandwich with sliced roast beef, sauce, and fresh fillings.",
-        "ar": "ساندويش روستو كلاسيكي مع شرائح لحم، صوص، وحشوات طازجة."
-      },
-      "image": "data/images/rosto.jpg",
-      "isAvailable": true
-    },
-    {
       "id": "sojok",
       "categoryId": "sandwiches",
-      "order": 8,
+      "order": 6,
       "name": {
         "en": "SOJOK",
         "ar": "سجق"
       },
-      "price": "300,000 L.L.",
+      "price": "250,000 L.L.",
       "description": {
         "en": "A Lebanese sojok sandwich with spiced sausage and rich flavor.",
         "ar": "ساندويش سوجوك لبناني مع سجق متبّل ونكهة غنية."
@@ -141,12 +125,12 @@
     {
       "id": "makanek",
       "categoryId": "sandwiches",
-      "order": 9,
+      "order": 7,
       "name": {
         "en": "MAKANEK",
         "ar": "مقانق"
       },
-      "price": "300,000 L.L.",
+      "price": "250,000 L.L.",
       "description": {
         "en": "A makanek sandwich with Lebanese-style mini sausages and savory seasoning.",
         "ar": "ساندويش مقانق مع نقانق لبنانية صغيرة وتتبيلة شهية."
@@ -157,12 +141,12 @@
     {
       "id": "fatayel",
       "categoryId": "sandwiches",
-      "order": 10,
+      "order": 8,
       "name": {
         "en": "FATAYEL",
         "ar": "فتايل"
       },
-      "price": "300,000 L.L.",
+      "price": "250,000 L.L.",
       "description": {
         "en": "A fatayel sandwich with seasoned meat and classic Lebanese flavor.",
         "ar": "ساندويش فتايل مع لحم متبّل ونكهة لبنانية كلاسيكية."
@@ -173,12 +157,12 @@
     {
       "id": "nkhaat",
       "categoryId": "sandwiches",
-      "order": 11,
+      "order": 9,
       "name": {
         "en": "NKHAAT",
         "ar": "نخاعات"
       },
-      "price": "300,000 L.L.",
+      "price": "250,000 L.L.",
       "description": {
         "en": "A traditional nkhaat sandwich prepared with Lebanese seasoning and fresh toppings.",
         "ar": "ساندويش نخاعات تقليدي يُحضّر بتتبيلة لبنانية وحشوات طازجة."
@@ -189,12 +173,12 @@
     {
       "id": "tawoouk",
       "categoryId": "sandwiches",
-      "order": 12,
+      "order": 10,
       "name": {
         "en": "TAWOOUK",
         "ar": "طاووق"
       },
-      "price": "300,000 L.L.",
+      "price": "250,000 L.L.",
       "description": {
         "en": "A grilled chicken tawoouk sandwich with garlic sauce and fresh fillings.",
         "ar": "ساندويش طاووق مشوي مع صوص الثوم وحشوات طازجة."
@@ -205,12 +189,12 @@
     {
       "id": "kafta",
       "categoryId": "sandwiches",
-      "order": 13,
+      "order": 11,
       "name": {
         "en": "KAFTA",
         "ar": "كفتة"
       },
-      "price": "300,000 L.L.",
+      "price": "250,000 L.L.",
       "description": {
         "en": "A Lebanese kafta sandwich with seasoned grilled meat and fresh fillings.",
         "ar": "ساندويش كفتا لبناني مع لحم مشوي متبّل وحشوات طازجة."
@@ -221,12 +205,12 @@
     {
       "id": "beef-burger",
       "categoryId": "sandwiches",
-      "order": 14,
+      "order": 12,
       "name": {
         "en": "BEEF-BURGER",
         "ar": "برغر لحم"
       },
-      "price": "300,000 L.L.",
+      "price": "250,000 L.L.",
       "description": {
         "en": "A beef burger sandwich with a juicy beef patty, sauce, and fresh toppings.",
         "ar": "ساندويش برغر لحم مع قطعة لحم طرية، صوص، وإضافات طازجة."
@@ -237,12 +221,12 @@
     {
       "id": "chickenburger",
       "categoryId": "sandwiches",
-      "order": 15,
+      "order": 14,
       "name": {
         "en": "CHICKENBURGER",
         "ar": "برغر دجاج"
       },
-      "price": "300,000 L.L.",
+      "price": "250,000 L.L.",
       "description": {
         "en": "A chicken burger sandwich with a tender chicken patty, sauce, and fresh toppings.",
         "ar": "ساندويش برغر دجاج مع قطعة دجاج طرية، صوص، وإضافات طازجة."
@@ -253,12 +237,12 @@
     {
       "id": "zinger",
       "categoryId": "sandwiches",
-      "order": 16,
+      "order": 20,
       "name": {
         "en": "ZINGER",
         "ar": "زنجر"
       },
-      "price": "450,000 L.L.",
+      "price": "500,000 L.L.",
       "description": {
         "en": "A spicy crispy chicken sandwich served with sauce and fresh fillings.",
         "ar": "ساندويش دجاج كريسبي حار يُقدّم مع صوص وحشوات طازجة."
@@ -269,12 +253,12 @@
     {
       "id": "nuggets",
       "categoryId": "sandwiches",
-      "order": 16,
+      "order": 5,
       "name": {
         "en": "NUGGETS",
         "ar": "ناغتس"
       },
-      "price": "300,000 L.L.",
+      "price": "250,000 L.L.",
       "description": {
         "en": "Crispy chicken nuggets served with a delicious sauce.",
         "ar": "قطع ناجتس دجاج مقرمشة تقدم مع صوص لذيذ."
@@ -283,9 +267,153 @@
       "isAvailable": true
     },
     {
+      "id": "cheese-beef-burger",
+      "categoryId": "sandwiches",
+      "order": 13,
+      "name": {
+        "en": "CHEESE BEEF BURGER",
+        "ar": "تشيز برغر لحم"
+      },
+      "price": "300,000 L.L.",
+      "description": {
+        "en": "Delicious beef burger with melted cheese.",
+        "ar": "برغر لحم شهي مع الجبن الذائب."
+      },
+      "image": "data/images/cheese-beef-burger.avif",
+      "isAvailable": true
+    },
+    {
+      "id": "cheese-chicken-burger",
+      "categoryId": "sandwiches",
+      "order": 15,
+      "name": {
+        "en": "CHEESE CHICKEN BURGER",
+        "ar": "تشيز برغر دجاج"
+      },
+      "price": "300,000 L.L.",
+      "description": {
+        "en": "Tasty chicken burger with melted cheese.",
+        "ar": "برغر دجاج لذيذ مع الجبن الذائب."
+      },
+      "image": "data/images/cheese-chicken-burger.avif",
+      "isAvailable": true
+    },
+    {
+      "id": "chicken-sub",
+      "categoryId": "sandwiches",
+      "order": 16,
+      "name": {
+        "en": "CHICKEN SUB",
+        "ar": "تشيكن ساب"
+      },
+      "price": "300,000 L.L.",
+      "description": {
+        "en": "Classic chicken sub sandwich.",
+        "ar": "ساندويش تشيكن ساب الكلاسيكي."
+      },
+      "image": "data/images/chicken-sub.avif",
+      "isAvailable": true
+    },
+    {
+      "id": "teriyaki",
+      "categoryId": "sandwiches",
+      "order": 17,
+      "name": {
+        "en": "TERIYAKI",
+        "ar": "ترياكي"
+      },
+      "price": "300,000 L.L.",
+      "description": {
+        "en": "Savory teriyaki chicken sandwich.",
+        "ar": "ساندويش دجاج ترياكي اللذيذ."
+      },
+      "image": "data/images/teriyaki.avif",
+      "isAvailable": true
+    },
+    {
+      "id": "francisco",
+      "categoryId": "sandwiches",
+      "order": 18,
+      "name": {
+        "en": "FRANCISCO",
+        "ar": "فرانسيسكو"
+      },
+      "price": "300,000 L.L.",
+      "description": {
+        "en": "Special Francisco sandwich.",
+        "ar": "ساندويش فرانسيسكو المميز."
+      },
+      "image": "data/images/fransisco.avif",
+      "isAvailable": true
+    },
+    {
+      "id": "chicken-cream",
+      "categoryId": "sandwiches",
+      "order": 19,
+      "name": {
+        "en": "CHICKEN CREAM",
+        "ar": "تشيكن كريم"
+      },
+      "price": "300,000 L.L.",
+      "description": {
+        "en": "Creamy chicken sandwich.",
+        "ar": "ساندويش الدجاج بالكريمة الغنية."
+      },
+      "image": "data/images/chicken-creme.avif",
+      "isAvailable": true
+    },
+    {
+      "id": "twister",
+      "categoryId": "sandwiches",
+      "order": 22,
+      "name": {
+        "en": "TWISTER",
+        "ar": "تويستر"
+      },
+      "price": "500,000 L.L.",
+      "description": {
+        "en": "Spicy and crispy twister wrap.",
+        "ar": "ساندويش تويستر الحار والمقرمش."
+      },
+      "image": "data/images/twister.avif",
+      "isAvailable": true
+    },
+    {
+      "id": "victoria",
+      "categoryId": "sandwiches",
+      "order": 23,
+      "name": {
+        "en": "VICTORIA",
+        "ar": "فيكتوريا"
+      },
+      "price": "500,000 L.L.",
+      "description": {
+        "en": "Delicious Victoria sandwich.",
+        "ar": "ساندويش فيكتوريا الرائع."
+      },
+      "image": "data/images/victoria.avif",
+      "isAvailable": true
+    },
+    {
+      "id": "tortilla-supreme",
+      "categoryId": "sandwiches",
+      "order": 24,
+      "name": {
+        "en": "TORTILLA SUPREME",
+        "ar": "تورتيا سوبريم"
+      },
+      "price": "500,000 L.L.",
+      "description": {
+        "en": "Supreme tortilla wrap with rich flavors.",
+        "ar": "تورتيا سوبريم الغنية بالنكهات."
+      },
+      "image": "data/images/tortilla-supreme.avif",
+      "isAvailable": true
+    },
+    {
       "id": "3-piece-crispy",
       "categoryId": "meals",
-      "order": 1,
+      "order": 5,
       "name": {
         "en": "3 PIECE CRISPY",
         "ar": "كريسبي 3 قطع"
@@ -301,7 +429,7 @@
     {
       "id": "5-piece-crispy",
       "categoryId": "meals",
-      "order": 2,
+      "order": 6,
       "name": {
         "en": "5 PIECE CRISPY",
         "ar": "كريسبي 5 قطع"
@@ -312,38 +440,6 @@
         "ar": "وجبة كريسبي 5 قطع تُقدّم مع بطاطا مقرمشة ومشروب بارد."
       },
       "image": "data/images/5-piece-crispy.jpg",
-      "isAvailable": true
-    },
-    {
-      "id": "8-piece-crispy",
-      "categoryId": "meals",
-      "order": 3,
-      "name": {
-        "en": "8 PIECE CRISPY",
-        "ar": "كريسبي 8 قطع"
-      },
-      "price": "1,200,000 L.L.",
-      "description": {
-        "en": "An 8 piece crispy chicken meal served with crispy fries and a cold drink.",
-        "ar": "وجبة كريسبي 8 قطع تُقدّم مع بطاطا مقرمشة ومشروب بارد."
-      },
-      "image": "data/images/8-piece-crispy.jpg",
-      "isAvailable": true
-    },
-    {
-      "id": "12-piece-crispy",
-      "categoryId": "meals",
-      "order": 4,
-      "name": {
-        "en": "12 PIECE CRISPY",
-        "ar": "كريسبي 12 قطعة"
-      },
-      "price": "1,800,000 L.L.",
-      "description": {
-        "en": "A 12 piece crispy chicken meal served with crispy fries and a cold drink.",
-        "ar": "وجبة كريسبي 12 قطعة تُقدّم مع بطاطا مقرمشة ومشروب بارد."
-      },
-      "image": "data/images/12-piece-crispy.jpg",
       "isAvailable": true
     },
     {
@@ -493,7 +589,7 @@
     {
       "id": "water",
       "categoryId": "drinks",
-      "order": 5,
+      "order": 4,
       "name": {
         "en": "WATER",
         "ar": "مياه"
@@ -520,6 +616,86 @@
         "ar": "عبوة لبن باردة."
       },
       "image": "data/images/ayran.avif",
+      "isAvailable": true
+    },
+    {
+      "id": "tawook-meal",
+      "categoryId": "meals",
+      "order": 1,
+      "name": {
+        "en": "TAWOOK MEAL",
+        "ar": "وجبة طاووق"
+      },
+      "price": "800,000 L.L.",
+      "description": {
+        "en": "Delicious Tawook meal.",
+        "ar": "وجبة طاووق شهية."
+      },
+      "image": "data/images/tawook-meal.avif",
+      "isAvailable": true
+    },
+    {
+      "id": "burger-meal",
+      "categoryId": "meals",
+      "order": 2,
+      "name": {
+        "en": "BURGER MEAL",
+        "ar": "وجبة برغر"
+      },
+      "price": "700,000 L.L.",
+      "description": {
+        "en": "Classic burger meal.",
+        "ar": "وجبة برغر كلاسيكية."
+      },
+      "image": "data/images/burger-meal.avif",
+      "isAvailable": true
+    },
+    {
+      "id": "escalope-meal",
+      "categoryId": "meals",
+      "order": 3,
+      "name": {
+        "en": "ESCALOPE MEAL",
+        "ar": "وجبة إسكالوب"
+      },
+      "price": "700,000 L.L.",
+      "description": {
+        "en": "Crispy escalope meal.",
+        "ar": "وجبة إسكالوب مقرمشة."
+      },
+      "image": "data/images/escalope-meal.avif",
+      "isAvailable": true
+    },
+    {
+      "id": "nuggets-meal",
+      "categoryId": "meals",
+      "order": 4,
+      "name": {
+        "en": "NUGGETS MEAL",
+        "ar": "وجبة ناغيتس"
+      },
+      "price": "700,000 L.L.",
+      "description": {
+        "en": "Tasty nuggets meal.",
+        "ar": "وجبة ناغيتس لذيذة."
+      },
+      "image": "data/images/nuggets-meal.avif",
+      "isAvailable": true
+    },
+    {
+      "id": "fajita",
+      "categoryId": "sandwiches",
+      "order": 21,
+      "name": {
+        "en": "FAJITA",
+        "ar": "فاهيتا"
+      },
+      "price": "500,000 L.L.",
+      "description": {
+        "en": "Savory fajita sandwich.",
+        "ar": "ساندويش فاهيتا شهي ومميز."
+      },
+      "image": "data/images/fahita.avif",
       "isAvailable": true
     }
   ]
