@@ -17,8 +17,8 @@ const siteText = {
   en: {
     tagline: "Snacks & More",
     visitUs: "Visit Us",
-    location: "Lebanon",
-    footerBottom: "© 2026 961 Food. Built for speed.",
+    location: "Ghazieh",
+    footerBottom: "Built By Yousef Abdallah 70 646 225.",
     loading: "Loading menu...",
     error: "Menu failed to load. Please try again later.",
     defaultDescription: "Fresh fast food favorite from 961 Food.",
@@ -28,8 +28,8 @@ const siteText = {
   ar: {
     tagline: "سناكس وأكثر",
     visitUs: "زورونا",
-    location: "لبنان",
-    footerBottom: "© 2026 961 Food. صُمم للسرعة.",
+    location: "غازية",
+    footerBottom: "©  إنتاج يوسف عبدالله 225 646 70 ",
     loading: "جارٍ تحميل القائمة...",
     error: "تعذر تحميل القائمة. يرجى المحاولة لاحقًا.",
     defaultDescription: "طبق فاست فود مميز من 961 Food.",
